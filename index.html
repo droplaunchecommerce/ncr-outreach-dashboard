@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#0A0A0A">
+<title>No Code Rich — Outreach Command Center</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#0A0A0A;
+  --bg2:#111111;
+  --bg3:#161616;
+  --glass:rgba(255,255,255,0.03);
+  --glass-h:rgba(255,255,255,0.06);
+  --border:rgba(201,168,76,0.12);
+  --border-h:rgba(201,168,76,0.25);
+  --text:#f0ead6;
+  --text2:#8a7e5a;
+  --text3:#3a3228;
+  --gold:#C9A84C;
+  --gold2:#e8c96a;
+  --gold-dim:rgba(201,168,76,0.15);
+  --gold-glow:rgba(201,168,76,0.08);
+  --green:#4ade80;
+  --red:#f87171;
+  --blue:#60a5fa;
+  --grad:linear-gradient(135deg,#C9A84C 0%,#e8c96a 50%,#a07830 100%);
+  --grad-text:linear-gradient(135deg,#C9A84C 0%,#f0d080 60%,#C9A84C 100%);
+  --sidebar:240px;
+  --radius:14px;
+}
+html{background:var(--bg)}
+body{
+  font-family:'Inter',-apple-system,sans-serif;
+  background:var(--bg);color:var(--text);
+  min-height:100vh;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+
+/* ── AMBIENT ── */
+#ambientBg{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden}
+.amb-orb{position:absolute;border-radius:50%;filter:blur(80px);animation:orbFloat 14s ease-in-out infinite}
+.amb-orb1{width:500px;height:500px;top:-10%;right:-5%;background:radial-gradient(circle,rgba(201,168,76,.08) 0%,transparent 70%);animation-duration:16s}
+.amb-orb2{width:400px;height:400px;bottom:-15%;left:-8%;background:radial-gradient(circle,rgba(201,168,76,.05) 0%,transparent 70%);animation-duration:20s;animation-delay:-8s}
+.amb-grid{position:absolute;inset:0;background-image:radial-gradient(circle,rgba(201,168,76,.03) 1px,transparent 1px);background-size:36px 36px;mask-image:radial-gradient(ellipse 80% 80% at 50% 50%,black 0%,transparent 100%)}
+@keyframes orbFloat{0%,100%{transform:translate(0,0) scale(1)}33%{transform:translate(20px,-15px) scale(1.04)}66%{transform:translate(-15px,10px) scale(.97)}}
+
+/* ── AUTH GATE ── */
+#authGate{position:fixed;inset:0;z-index:9999;display:flex;align-items:center;justify-content:center;padding:20px}
+.auth-bg{position:absolute;inset:0;background:var(--bg)}
+.auth-card{position:relative;z-index:1;width:100%;max-width:380px;padding:2px;border-radius:24px;background:var(--grad);box-shadow:0 0 80px rgba(201,168,76,.15);animation:authIn .5s cubic-bezier(0.16,1,0.3,1) both}
+.auth-inner{background:#0d0d0d;border-radius:23px;padding:44px 40px;display:flex;flex-direction:column;gap:28px}
+.auth-logo{text-align:center}
+.auth-brand{font-size:22px;font-weight:900;letter-spacing:-.5px;background:var(--grad-text);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.auth-sub{font-size:11px;color:var(--text3);margin-top:5px;letter-spacing:2px;text-transform:uppercase}
+.auth-field label{display:block;font-size:11px;font-weight:600;color:var(--text2);letter-spacing:.5px;text-transform:uppercase;margin-bottom:8px}
+.auth-input{width:100%;padding:13px 16px;background:rgba(255,255,255,.03);border:1px solid var(--border);border-radius:12px;color:var(--text);font-size:15px;font-family:inherit;outline:none;transition:.2s;-webkit-text-fill-color:var(--text)}
+.auth-input:focus{border-color:rgba(201,168,76,.4);background:rgba(201,168,76,.04);box-shadow:0 0 0 3px rgba(201,168,76,.08)}
+.auth-btn{width:100%;padding:14px;background:var(--grad);border:none;border-radius:12px;color:#0A0A0A;font-size:15px;font-weight:800;font-family:inherit;cursor:pointer;transition:.2s;letter-spacing:.3px}
+.auth-btn:hover{transform:translateY(-2px);box-shadow:0 8px 32px rgba(201,168,76,.3)}
+.auth-error{font-size:12px;color:var(--red);text-align:center;opacity:0;transition:.2s;min-height:16px}
+.auth-error.show{opacity:1}
+@keyframes authIn{from{opacity:0;transform:translateY(20px) scale(.97)}to{opacity:1;transform:none}}
+@keyframes shake{0%,100%{transform:translateX(0)}20%,60%{transform:translateX(-8px)}40%,80%{transform:translateX(8px)}}
+.shake{animation:shake .35s ease}
+
+/* ── LAYOUT ── */
+#dashWrap{position:relative;z-index:1;display:none}
+#dashWrap.visible{display:block}
+
+/* ── SIDEBAR ── */
+.sidebar{position:fixed;left:0;top:0;bottom:0;width:var(--sidebar);z-index:100;background:rgba(10,10,10,.92);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border-right:1px solid var(--border);display:flex;flex-direction:column}
+.sidebar-logo{padding:26px 22px 20px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:12px}
+.logo-icon{width:34px;height:34px;border-radius:10px;background:var(--grad);display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:900;color:#0A0A0A;flex-shrink:0}
+.logo-text .wordmark{font-size:14px;font-weight:800;background:var(--grad-text);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.logo-text .tagline{font-size:9px;color:var(--text3);letter-spacing:1px;text-transform:uppercase;margin-top:1px}
+
+.status-bar{padding:14px 22px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:8px}
+.pulse-dot{width:7px;height:7px;border-radius:50%;flex-shrink:0}
+.pulse-dot.active{background:var(--green);box-shadow:0 0 0 0 rgba(74,222,128,.4);animation:pulseDot 2s infinite}
+.pulse-dot.idle{background:var(--text3)}
+.pulse-dot.error{background:var(--red)}
+@keyframes pulseDot{0%{box-shadow:0 0 0 0 rgba(74,222,128,.4)}70%{box-shadow:0 0 0 6px rgba(74,222,128,0)}100%{box-shadow:0 0 0 0 rgba(74,222,128,0)}}
+.status-label{font-size:11px;color:var(--text2);font-weight:500;flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+
+.nav{flex:1;padding:12px 0;overflow-y:auto}
+.nav-section{padding:12px 22px 5px;font-size:10px;color:var(--text3);letter-spacing:1.2px;text-transform:uppercase;font-weight:600}
+.nav-item{display:flex;align-items:center;gap:10px;padding:9px 22px;font-size:13px;font-weight:500;color:var(--text2);cursor:pointer;transition:.15s;border-left:2px solid transparent;-webkit-tap-highlight-color:transparent;user-select:none}
+.nav-item:hover{color:var(--text);background:var(--glass-h)}
+.nav-item.active{color:var(--gold);border-left-color:var(--gold);background:var(--gold-glow)}
+.nav-item svg{opacity:.5;flex-shrink:0}
+.nav-item.active svg{opacity:1}
+.nav-badge{margin-left:auto;font-size:10px;font-weight:700;padding:2px 7px;border-radius:100px;background:var(--gold-dim);color:var(--gold)}
+
+.sidebar-footer{padding:16px 22px;border-top:1px solid var(--border);display:flex;flex-direction:column;gap:8px}
+.sf-btn{display:flex;align-items:center;justify-content:center;gap:7px;padding:9px 16px;border-radius:10px;font-size:12px;font-weight:700;cursor:pointer;transition:.15s;font-family:inherit;border:none}
+.sf-btn-primary{background:var(--grad);color:#0A0A0A}
+.sf-btn-primary:hover{opacity:.9;transform:translateY(-1px)}
+.sf-btn-secondary{background:var(--glass);border:1px solid var(--border);color:var(--text2)}
+.sf-btn-secondary:hover{background:var(--glass-h);border-color:var(--border-h);color:var(--text)}
+
+/* ── TOPBAR ── */
+.main{margin-left:var(--sidebar);min-height:100vh}
+.topbar{display:flex;align-items:center;justify-content:space-between;padding:16px 32px;background:rgba(10,10,10,.8);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:50}
+.topbar-left .page-title{font-size:16px;font-weight:700;letter-spacing:-.3px}
+.topbar-left .page-sub{font-size:11px;color:var(--text3);margin-top:2px}
+.topbar-right{display:flex;align-items:center;gap:8px}
+.tb-badge{display:inline-flex;align-items:center;gap:5px;padding:5px 11px;border-radius:100px;font-size:11px;font-weight:600}
+.tb-badge-live{background:rgba(74,222,128,.08);color:var(--green);border:1px solid rgba(74,222,128,.2)}
+.tb-badge-idle{background:var(--glass);color:var(--text3);border:1px solid var(--border)}
+.tb-time{font-size:11px;color:var(--text3);padding:5px 10px;border:1px solid var(--border);border-radius:100px}
+
+/* ── PAGES ── */
+.page{display:none;padding:32px;animation:pageIn .3s ease}
+.page.active{display:block}
+@keyframes pageIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+
+/* ── STAT CARDS ── */
+.stats-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-bottom:24px}
+.stat-card{background:var(--glass);border:1px solid var(--border);border-radius:var(--radius);padding:20px;transition:.2s;position:relative;overflow:hidden}
+.stat-card:hover{border-color:var(--border-h);background:var(--glass-h)}
+.stat-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--grad);opacity:0;transition:.2s}
+.stat-card:hover::before{opacity:1}
+.stat-label{font-size:10px;color:var(--text2);letter-spacing:.8px;text-transform:uppercase;font-weight:600;margin-bottom:10px}
+.stat-value{font-size:28px;font-weight:800;letter-spacing:-1px;background:var(--grad-text);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.stat-sub{font-size:11px;color:var(--text3);margin-top:4px}
+.stat-icon{position:absolute;top:18px;right:18px;opacity:.15;font-size:22px}
+
+/* ── PROGRESS CARD ── */
+.progress-card{background:var(--glass);border:1px solid var(--border);border-radius:var(--radius);padding:22px;margin-bottom:24px}
+.progress-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px}
+.progress-title{font-size:13px;font-weight:700;color:var(--text)}
+.progress-pct{font-size:13px;font-weight:700;color:var(--gold)}
+.progress-bar-bg{height:6px;background:rgba(255,255,255,.05);border-radius:100px;overflow:hidden;margin-bottom:12px}
+.progress-bar-fill{height:100%;border-radius:100px;background:var(--grad);transition:width .5s ease}
+.progress-info{display:flex;gap:24px;flex-wrap:wrap}
+.pi-item{display:flex;flex-direction:column;gap:3px}
+.pi-label{font-size:10px;color:var(--text3);text-transform:uppercase;letter-spacing:.5px}
+.pi-value{font-size:13px;font-weight:600;color:var(--text2)}
+
+/* ── GRID 2COL ── */
+.grid-2{display:grid;grid-template-columns:1fr 380px;gap:16px;margin-bottom:24px}
+
+/* ── ACTIVITY FEED ── */
+.card{background:var(--glass);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden}
+.card-head{display:flex;align-items:center;justify-content:space-between;padding:16px 20px;border-bottom:1px solid var(--border)}
+.card-title{font-size:13px;font-weight:700}
+.card-sub{font-size:11px;color:var(--text3)}
+.activity-feed{max-height:360px;overflow-y:auto}
+.activity-feed::-webkit-scrollbar{width:3px}
+.activity-feed::-webkit-scrollbar-track{background:transparent}
+.activity-feed::-webkit-scrollbar-thumb{background:var(--border);border-radius:3px}
+.activity-item{display:flex;align-items:flex-start;gap:10px;padding:10px 20px;border-bottom:1px solid rgba(201,168,76,.04);transition:.15s}
+.activity-item:hover{background:var(--glass-h)}
+.activity-dot{width:7px;height:7px;border-radius:50%;flex-shrink:0;margin-top:4px}
+.dot-lead{background:var(--gold)}
+.dot-email{background:var(--blue)}
+.dot-error{background:var(--red)}
+.dot-info{background:var(--text3)}
+.dot-done{background:var(--green)}
+.activity-msg{font-size:12px;color:var(--text2);flex:1;line-height:1.4}
+.activity-time{font-size:10px;color:var(--text3);flex-shrink:0}
+
+/* ── QUICK STATS (sidebar of overview) ── */
+.mini-stats{display:flex;flex-direction:column;gap:10px;padding:16px 20px}
+.mini-stat{display:flex;align-items:center;justify-content:space-between}
+.ms-label{font-size:12px;color:var(--text2)}
+.ms-value{font-size:13px;font-weight:700;color:var(--text)}
+.ms-bar-wrap{height:3px;background:rgba(255,255,255,.05);border-radius:100px;overflow:hidden;margin-top:4px}
+.ms-bar{height:100%;border-radius:100px;background:var(--grad)}
+
+/* ── LEADS TABLE ── */
+.table-wrap{overflow-x:auto}
+table{width:100%;border-collapse:collapse}
+thead th{font-size:10px;color:var(--text3);text-transform:uppercase;letter-spacing:.8px;font-weight:600;padding:10px 16px;text-align:left;border-bottom:1px solid var(--border)}
+tbody tr{border-bottom:1px solid rgba(201,168,76,.04);transition:.15s;cursor:default}
+tbody tr:hover{background:var(--glass-h)}
+tbody td{padding:11px 16px;font-size:12px;color:var(--text2);vertical-align:middle}
+.td-name{font-weight:600;color:var(--text);font-size:13px}
+.td-email{color:var(--gold);font-size:11px}
+.td-email.empty{color:var(--text3)}
+.status-pill{display:inline-flex;align-items:center;padding:3px 9px;border-radius:100px;font-size:10px;font-weight:700;letter-spacing:.3px}
+.status-neu{background:var(--gold-dim);color:var(--gold)}
+.status-gesendet{background:rgba(96,165,250,.1);color:var(--blue)}
+.status-geöffnet{background:rgba(74,222,128,.1);color:var(--green)}
+.status-geklickt{background:rgba(74,222,128,.15);color:var(--green)}
+.status-fehler{background:rgba(248,113,113,.1);color:var(--red)}
+
+/* ── TABLE FILTERS ── */
+.table-filters{display:flex;align-items:center;gap:10px;padding:14px 20px;border-bottom:1px solid var(--border);flex-wrap:wrap}
+.filter-search{flex:1;min-width:200px;padding:8px 12px;background:var(--glass);border:1px solid var(--border);border-radius:9px;color:var(--text);font-size:12px;font-family:inherit;outline:none;transition:.2s}
+.filter-search:focus{border-color:rgba(201,168,76,.4)}
+.filter-search::placeholder{color:var(--text3)}
+.filter-btn{padding:7px 13px;border-radius:9px;border:1px solid var(--border);background:var(--glass);color:var(--text2);font-size:11px;font-weight:600;cursor:pointer;transition:.15s;font-family:inherit}
+.filter-btn:hover,.filter-btn.active{background:var(--gold-dim);border-color:rgba(201,168,76,.3);color:var(--gold)}
+.table-count{font-size:11px;color:var(--text3);margin-left:auto}
+
+/* ── EMPTY STATE ── */
+.empty-state{text-align:center;padding:60px 20px}
+.empty-icon{font-size:32px;margin-bottom:12px;opacity:.3}
+.empty-title{font-size:14px;font-weight:600;color:var(--text2);margin-bottom:6px}
+.empty-sub{font-size:12px;color:var(--text3)}
+
+/* ── LOGS PAGE ── */
+.log-container{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden}
+.log-head{padding:14px 20px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between}
+.log-feed{height:500px;overflow-y:auto;padding:12px 0;font-family:'SF Mono','Fira Code',monospace;font-size:12px}
+.log-feed::-webkit-scrollbar{width:3px}
+.log-feed::-webkit-scrollbar-thumb{background:var(--border);border-radius:3px}
+.log-line{padding:3px 20px;line-height:1.6;display:flex;gap:12px}
+.log-line:hover{background:rgba(255,255,255,.02)}
+.log-ts{color:var(--text3);flex-shrink:0;font-size:11px}
+.log-type{flex-shrink:0;font-size:10px;font-weight:700;padding:1px 6px;border-radius:4px;align-self:flex-start;margin-top:2px}
+.lt-lead_found,.lt-lead_email{background:rgba(201,168,76,.15);color:var(--gold)}
+.lt-email_sent{background:rgba(96,165,250,.1);color:var(--blue)}
+.lt-error{background:rgba(248,113,113,.1);color:var(--red)}
+.lt-pipeline_start,.lt-pipeline_done{background:rgba(74,222,128,.1);color:var(--green)}
+.lt-info,.lt-batch_saved,.lt-scrape_start{background:rgba(255,255,255,.05);color:var(--text3)}
+.log-msg{color:var(--text2);flex:1}
+
+/* ── GITHUB STATUS ── */
+.gh-bar{display:flex;align-items:center;justify-content:space-between;padding:14px 20px;background:var(--glass);border:1px solid var(--border);border-radius:var(--radius);margin-bottom:16px}
+.gh-info{font-size:12px;color:var(--text2)}
+.gh-url{font-size:11px;color:var(--gold);text-decoration:none}
+.gh-url:hover{text-decoration:underline}
+.gh-push-btn{padding:7px 16px;background:var(--grad);border:none;border-radius:9px;color:#0A0A0A;font-size:12px;font-weight:700;cursor:pointer;font-family:inherit;transition:.15s}
+.gh-push-btn:hover{opacity:.9}
+.gh-push-btn:disabled{opacity:.4;cursor:not-allowed}
+
+/* ── SCROLLBAR GLOBAL ── */
+::-webkit-scrollbar{width:4px;height:4px}
+::-webkit-scrollbar-track{background:transparent}
+::-webkit-scrollbar-thumb{background:var(--border);border-radius:4px}
+
+/* ── TOAST ── */
+#toast{position:fixed;bottom:24px;right:24px;z-index:9000;display:flex;flex-direction:column;gap:8px;pointer-events:none}
+.toast-item{padding:11px 18px;border-radius:12px;font-size:13px;font-weight:500;animation:toastIn .3s ease;pointer-events:auto;border:1px solid}
+.toast-success{background:#0f1f12;color:var(--green);border-color:rgba(74,222,128,.2)}
+.toast-error{background:#1f0f0f;color:var(--red);border-color:rgba(248,113,113,.2)}
+.toast-info{background:#1a1500;color:var(--gold);border-color:rgba(201,168,76,.2)}
+@keyframes toastIn{from{opacity:0;transform:translateX(20px)}to{opacity:1;transform:none}}
+
+/* ── MOBILE ── */
+@media(max-width:900px){
+  .sidebar{transform:translateX(-100%);transition:.3s}
+  .sidebar.open{transform:none}
+  .main{margin-left:0}
+  .stats-grid{grid-template-columns:repeat(2,1fr)}
+  .grid-2{grid-template-columns:1fr}
+  .page{padding:16px}
+  .topbar{padding:12px 16px}
+}
+</style>
+</head>
+<body>
+
+<div id="ambientBg">
+  <div class="amb-orb amb-orb1"></div>
+  <div class="amb-orb amb-orb2"></div>
+  <div class="amb-grid"></div>
+</div>
+
+<!-- AUTH GATE -->
+<div id="authGate">
+  <div class="auth-bg"></div>
+  <div class="auth-card">
+    <div class="auth-inner">
+      <div class="auth-logo">
+        <div class="auth-brand">No Code Rich</div>
+        <div class="auth-sub">Outreach Command Center</div>
+      </div>
+      <div class="auth-field">
+        <label>Passwort</label>
+        <input class="auth-input" id="authInput" type="password" placeholder="••••••••" autocomplete="current-password">
+      </div>
+      <button class="auth-btn" id="authBtn" onclick="doAuth()">Einloggen →</button>
+      <div class="auth-error" id="authError">Falsches Passwort</div>
+    </div>
+  </div>
+</div>
+
+<!-- DASHBOARD -->
+<div id="dashWrap">
+  <!-- Sidebar -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-logo">
+      <div class="logo-icon">N</div>
+      <div class="logo-text">
+        <div class="wordmark">No Code Rich</div>
+        <div class="tagline">Outreach Pipeline</div>
+      </div>
+    </div>
+
+    <div class="status-bar">
+      <div class="pulse-dot idle" id="pipelineDot"></div>
+      <div class="status-label" id="pipelineLabel">Bereit</div>
+    </div>
+
+    <nav class="nav">
+      <div class="nav-section">Pipeline</div>
+      <div class="nav-item active" onclick="showPage('overview',this)">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+        Übersicht
+      </div>
+      <div class="nav-item" onclick="showPage('leads',this)">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        Leads
+        <span class="nav-badge" id="navLeadsCount">0</span>
+      </div>
+      <div class="nav-item" onclick="showPage('campaign',this)">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        Kampagne
+      </div>
+      <div class="nav-item" onclick="showPage('logs',this)">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+        Live Logs
+      </div>
+    </nav>
+
+    <div class="sidebar-footer">
+      <button class="sf-btn sf-btn-primary" id="startBtn" onclick="startScraper()">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+        Scraper starten
+      </button>
+      <button class="sf-btn sf-btn-secondary" onclick="pushToGitHub()">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+        Push Dashboard
+      </button>
+    </div>
+  </aside>
+
+  <!-- Main -->
+  <main class="main">
+    <div class="topbar">
+      <div class="topbar-left">
+        <div class="page-title" id="pageTitle">Übersicht</div>
+        <div class="page-sub" id="pageSub">Letzte Aktualisierung: —</div>
+      </div>
+      <div class="topbar-right">
+        <div class="tb-badge tb-badge-idle" id="liveBadge">
+          <span style="width:6px;height:6px;border-radius:50%;background:currentColor;display:inline-block"></span>
+          Verbinde...
+        </div>
+        <div class="tb-time" id="clockEl"></div>
+      </div>
+    </div>
+
+    <!-- OVERVIEW PAGE -->
+    <div class="page active" id="page-overview">
+
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-icon">🎯</div>
+          <div class="stat-label">Leads gesamt</div>
+          <div class="stat-value" id="statLeads">0</div>
+          <div class="stat-sub" id="statLeadsSub">—</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">📧</div>
+          <div class="stat-label">Mit E-Mail</div>
+          <div class="stat-value" id="statEmails">0</div>
+          <div class="stat-sub" id="statEmailsSub">—% der Leads</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">📤</div>
+          <div class="stat-label">Gesendet</div>
+          <div class="stat-value" id="statSent">0</div>
+          <div class="stat-sub" id="statSentSub">—</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">👁️</div>
+          <div class="stat-label">Geöffnet</div>
+          <div class="stat-value" id="statOpened">0</div>
+          <div class="stat-sub" id="statOpenedSub">—% Open Rate</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">💰</div>
+          <div class="stat-label">Replies</div>
+          <div class="stat-value" id="statReplies">0</div>
+          <div class="stat-sub">Potenzielle Kunden</div>
+        </div>
+      </div>
+
+      <div class="progress-card" id="progressCard">
+        <div class="progress-header">
+          <div class="progress-title">Scraper Fortschritt</div>
+          <div class="progress-pct" id="progressPct">0%</div>
+        </div>
+        <div class="progress-bar-bg">
+          <div class="progress-bar-fill" id="progressBar" style="width:0%"></div>
+        </div>
+        <div class="progress-info">
+          <div class="pi-item">
+            <div class="pi-label">Aktuell</div>
+            <div class="pi-value" id="progressStep">—</div>
+          </div>
+          <div class="pi-item">
+            <div class="pi-label">Suchen</div>
+            <div class="pi-value" id="progressQueries">0 / 35</div>
+          </div>
+          <div class="pi-item">
+            <div class="pi-label">Status</div>
+            <div class="pi-value" id="progressStatus">—</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-2">
+        <div class="card">
+          <div class="card-head">
+            <div class="card-title">Live Aktivität</div>
+            <div class="card-sub" id="activityCount">0 Events</div>
+          </div>
+          <div class="activity-feed" id="activityFeed">
+            <div class="empty-state">
+              <div class="empty-icon">⚡</div>
+              <div class="empty-title">Keine Aktivität</div>
+              <div class="empty-sub">Starte den Scraper um zu beginnen</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-head">
+            <div class="card-title">Kampagnen-Stats</div>
+          </div>
+          <div class="mini-stats" id="miniStats">
+            <div class="mini-stat" style="flex-direction:column;align-items:flex-start;gap:6px">
+              <div style="display:flex;justify-content:space-between;width:100%">
+                <div class="ms-label">Open Rate</div>
+                <div class="ms-value" id="openRate">—</div>
+              </div>
+              <div class="ms-bar-wrap" style="width:100%"><div class="ms-bar" id="openRateBar" style="width:0%"></div></div>
+            </div>
+            <div style="height:1px;background:var(--border);margin:4px 0"></div>
+            <div class="mini-stat" style="flex-direction:column;align-items:flex-start;gap:6px">
+              <div style="display:flex;justify-content:space-between;width:100%">
+                <div class="ms-label">Click Rate</div>
+                <div class="ms-value" id="clickRate">—</div>
+              </div>
+              <div class="ms-bar-wrap" style="width:100%"><div class="ms-bar" id="clickRateBar" style="width:0%"></div></div>
+            </div>
+            <div style="height:1px;background:var(--border);margin:4px 0"></div>
+            <div class="mini-stat">
+              <div class="ms-label">Follow-Ups gesendet</div>
+              <div class="ms-value" id="followUps">0</div>
+            </div>
+            <div class="mini-stat">
+              <div class="ms-label">Noch nicht kontaktiert</div>
+              <div class="ms-value" id="notContacted">0</div>
+            </div>
+            <div class="mini-stat">
+              <div class="ms-label">Potenz. Revenue</div>
+              <div class="ms-value" id="potRevenue" style="color:var(--gold)">€0</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- LEADS PAGE -->
+    <div class="page" id="page-leads">
+      <div class="card">
+        <div class="table-filters">
+          <input class="filter-search" id="leadSearch" placeholder="Suche nach Firma, Stadt, E-Mail..." oninput="filterLeads()">
+          <button class="filter-btn active" onclick="setFilter('alle',this)">Alle</button>
+          <button class="filter-btn" onclick="setFilter('neu',this)">Neu</button>
+          <button class="filter-btn" onclick="setFilter('gesendet',this)">Gesendet</button>
+          <button class="filter-btn" onclick="setFilter('geöffnet',this)">Geöffnet</button>
+          <div class="table-count" id="tableCount">0 Leads</div>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Firma</th>
+                <th>Stadt</th>
+                <th>E-Mail</th>
+                <th>Website</th>
+                <th>Status</th>
+                <th>Datum</th>
+              </tr>
+            </thead>
+            <tbody id="leadsTableBody"></tbody>
+          </table>
+          <div class="empty-state" id="leadsEmpty" style="display:none">
+            <div class="empty-icon">🔍</div>
+            <div class="empty-title">Keine Leads gefunden</div>
+            <div class="empty-sub">Starte den Scraper oder passe den Filter an</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CAMPAIGN PAGE -->
+    <div class="page" id="page-campaign">
+      <div class="stats-grid" style="grid-template-columns:repeat(4,1fr)">
+        <div class="stat-card">
+          <div class="stat-label">E-Mails gesendet</div>
+          <div class="stat-value" id="cs-sent">0</div>
+          <div class="stat-sub">von <span id="cs-total">0</span> mit E-Mail</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Geöffnet</div>
+          <div class="stat-value" id="cs-opened">0</div>
+          <div class="stat-sub" id="cs-openedPct">—% Open Rate</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Geklickt</div>
+          <div class="stat-value" id="cs-clicked">0</div>
+          <div class="stat-sub" id="cs-clickedPct">—% Click Rate</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Follow-Ups</div>
+          <div class="stat-value" id="cs-followups">0</div>
+          <div class="stat-sub">Max 2 pro Lead</div>
+        </div>
+      </div>
+      <div class="card" style="margin-top:0">
+        <div class="card-head">
+          <div class="card-title">Kampagnen-Aktivität</div>
+          <div class="card-sub">Nur E-Mail-Events</div>
+        </div>
+        <div class="activity-feed" id="campaignFeed" style="max-height:500px">
+          <div class="empty-state">
+            <div class="empty-icon">📧</div>
+            <div class="empty-title">Keine E-Mails gesendet</div>
+            <div class="empty-sub">Starte die E-Mail-Kampagne in Schritt 5</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- LOGS PAGE -->
+    <div class="page" id="page-logs">
+      <div class="log-container">
+        <div class="log-head">
+          <div class="card-title">System Logs</div>
+          <button class="filter-btn" onclick="clearLogs()" style="font-size:11px">Löschen</button>
+        </div>
+        <div class="log-feed" id="logFeed">
+          <div class="empty-state">
+            <div class="empty-icon">📋</div>
+            <div class="empty-title">Keine Logs</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+</div>
+
+<div id="toast"></div>
+
+<script>
+// ── CONFIG ──────────────────────────────────────────────────────────
+const PASSWORD = 'ncr2026';
+const IS_LOCAL = location.hostname === 'localhost' || location.hostname === '127.0.0.1';
+const DATA_URL = IS_LOCAL ? '/api/data' : 'data.json?t=' + Date.now();
+const EVENTS_URL = '/api/events';
+const POLL_INTERVAL = IS_LOCAL ? 0 : 4000; // SSE wenn local, sonst poll
+
+// ── AUTH ─────────────────────────────────────────────────────────────
+function doAuth() {
+  const val = document.getElementById('authInput').value;
+  if (val === PASSWORD || sessionStorage.getItem('ncr_auth') === '1') {
+    sessionStorage.setItem('ncr_auth', '1');
+    document.getElementById('authGate').style.display = 'none';
+    document.getElementById('dashWrap').classList.add('visible');
+    initDashboard();
+  } else {
+    const card = document.querySelector('.auth-card');
+    const err = document.getElementById('authError');
+    card.classList.add('shake');
+    err.classList.add('show');
+    setTimeout(() => card.classList.remove('shake'), 400);
+  }
+}
+document.getElementById('authInput').addEventListener('keydown', e => e.key === 'Enter' && doAuth());
+if (sessionStorage.getItem('ncr_auth') === '1') doAuth();
+
+// ── NAVIGATION ──────────────────────────────────────────────────────
+const pageTitles = { overview: 'Übersicht', leads: 'Leads', campaign: 'Kampagne', logs: 'Live Logs' };
+let currentPage = 'overview';
+function showPage(name, el) {
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.nav-item').forEach(i => i.classList.remove('active'));
+  document.getElementById('page-' + name).classList.add('active');
+  if (el) el.classList.add('active');
+  currentPage = name;
+  document.getElementById('pageTitle').textContent = pageTitles[name] || name;
+}
+
+// ── CLOCK ────────────────────────────────────────────────────────────
+function updateClock() {
+  const now = new Date();
+  document.getElementById('clockEl').textContent =
+    now.toLocaleTimeString('de-DE', { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+}
+setInterval(updateClock, 1000);
+updateClock();
+
+// ── DATA ─────────────────────────────────────────────────────────────
+let state = null;
+let currentFilter = 'alle';
+
+function initDashboard() {
+  if (IS_LOCAL) {
+    connectSSE();
+  } else {
+    fetchData();
+    setInterval(fetchData, POLL_INTERVAL);
+  }
+}
+
+function connectSSE() {
+  const badge = document.getElementById('liveBadge');
+  badge.className = 'tb-badge tb-badge-live';
+  badge.innerHTML = '<span style="width:6px;height:6px;border-radius:50%;background:currentColor;display:inline-block;animation:pulseDot 2s infinite"></span> Live';
+
+  const es = new EventSource(EVENTS_URL);
+  es.onmessage = e => {
+    try { render(JSON.parse(e.data)); } catch {}
+  };
+  es.onerror = () => {
+    badge.className = 'tb-badge tb-badge-idle';
+    badge.innerHTML = '<span style="width:6px;height:6px;border-radius:50%;background:currentColor;display:inline-block"></span> Getrennt';
+    setTimeout(connectSSE, 3000);
+  };
+}
+
+async function fetchData() {
+  try {
+    const res = await fetch(DATA_URL);
+    const data = await res.json();
+    render(data);
+    document.getElementById('liveBadge').className = 'tb-badge tb-badge-live';
+    document.getElementById('liveBadge').innerHTML = '<span style="width:6px;height:6px;border-radius:50%;background:currentColor;display:inline-block"></span> Live';
+  } catch {
+    document.getElementById('liveBadge').className = 'tb-badge tb-badge-idle';
+    document.getElementById('liveBadge').innerHTML = '<span style="width:6px;height:6px;border-radius:50%;background:currentColor;display:inline-block"></span> Offline';
+  }
+}
+
+// ── RENDER ────────────────────────────────────────────────────────────
+function render(data) {
+  if (!data) return;
+  state = data;
+
+  const s = data.stats || {};
+  const p = data.progress || {};
+  const pl = data.pipeline || {};
+
+  // Pipeline status dot
+  const dot = document.getElementById('pipelineDot');
+  const lbl = document.getElementById('pipelineLabel');
+  dot.className = 'pulse-dot ' + (pl.status === 'running' ? 'active' : pl.status === 'error' ? 'error' : 'idle');
+  lbl.textContent = pl.current_step || 'Bereit';
+
+  // Stat cards
+  setText('statLeads', fmt(s.total_leads));
+  setText('statLeadsSub', `+ ${fmt(s.leads_with_email)} mit E-Mail`);
+  setText('statEmails', fmt(s.leads_with_email));
+  setText('statEmailsSub', s.total_leads > 0 ? pct(s.leads_with_email, s.total_leads) + '% der Leads' : '—');
+  setText('statSent', fmt(s.emails_sent));
+  setText('statOpened', fmt(s.emails_opened));
+  setText('statOpenedSub', s.emails_sent > 0 ? pct(s.emails_opened, s.emails_sent) + '% Open Rate' : '—');
+  setText('statReplies', fmt(s.replies));
+
+  // Progress
+  const done = p.queries_done || 0;
+  const total = p.total_queries || 35;
+  const perc = Math.round((done / total) * 100);
+  setText('progressPct', perc + '%');
+  document.getElementById('progressBar').style.width = perc + '%';
+  setText('progressStep', p.current_city && p.current_term ? `${p.current_term} — ${p.current_city}` : pl.current_step || '—');
+  setText('progressQueries', `${done} / ${total}`);
+  setText('progressStatus', pl.status === 'running' ? '🟢 Läuft' : pl.status === 'error' ? '🔴 Fehler' : '⚪ Idle');
+
+  // Mini stats
+  const or = s.emails_sent > 0 ? pct(s.emails_opened, s.emails_sent) : 0;
+  const cr = s.emails_sent > 0 ? pct(s.emails_clicked, s.emails_sent) : 0;
+  setText('openRate', or + '%');
+  setText('clickRate', cr + '%');
+  document.getElementById('openRateBar').style.width = Math.min(or, 100) + '%';
+  document.getElementById('clickRateBar').style.width = Math.min(cr, 100) + '%';
+  setText('followUps', fmt(s.follow_ups_sent));
+  setText('notContacted', fmt((s.leads_with_email || 0) - (s.emails_sent || 0)));
+  setText('potRevenue', '€' + fmt((s.replies || 0) * 197));
+
+  // Nav badge
+  setText('navLeadsCount', fmt(s.total_leads));
+
+  // Activity feed
+  renderActivity(data.activity || []);
+
+  // Leads table
+  renderLeads(data.leads_preview || []);
+
+  // Campaign stats
+  setText('cs-sent', fmt(s.emails_sent));
+  setText('cs-total', fmt(s.leads_with_email));
+  setText('cs-opened', fmt(s.emails_opened));
+  setText('cs-openedPct', (s.emails_sent > 0 ? pct(s.emails_opened, s.emails_sent) : '—') + '% Open Rate');
+  setText('cs-clicked', fmt(s.emails_clicked));
+  setText('cs-clickedPct', (s.emails_sent > 0 ? pct(s.emails_clicked, s.emails_sent) : '—') + '% Click Rate');
+  setText('cs-followups', fmt(s.follow_ups_sent));
+
+  renderCampaignFeed(data.activity || []);
+  renderLogs(data.activity || []);
+
+  // Last updated
+  if (pl.last_updated) {
+    const d = new Date(pl.last_updated);
+    document.getElementById('pageSub').textContent = 'Letzte Aktualisierung: ' + d.toLocaleTimeString('de-DE');
+  }
+}
+
+function renderActivity(activity) {
+  const feed = document.getElementById('activityFeed');
+  setText('activityCount', activity.length + ' Events');
+  if (!activity.length) return;
+
+  feed.innerHTML = activity.slice(0, 40).map(a => `
+    <div class="activity-item">
+      <div class="activity-dot ${dotClass(a.type)}"></div>
+      <div class="activity-msg">${escHtml(a.message)}</div>
+      <div class="activity-time">${timeAgo(a.time)}</div>
+    </div>
+  `).join('');
+}
+
+function renderCampaignFeed(activity) {
+  const feed = document.getElementById('campaignFeed');
+  const emailEvents = activity.filter(a => ['email_sent','email_opened','email_clicked'].includes(a.type));
+  if (!emailEvents.length) return;
+  feed.innerHTML = emailEvents.slice(0, 50).map(a => `
+    <div class="activity-item">
+      <div class="activity-dot dot-email"></div>
+      <div class="activity-msg">${escHtml(a.message)}</div>
+      <div class="activity-time">${timeAgo(a.time)}</div>
+    </div>
+  `).join('');
+}
+
+function renderLogs(activity) {
+  const feed = document.getElementById('logFeed');
+  if (!activity.length) return;
+  feed.innerHTML = activity.map(a => `
+    <div class="log-line">
+      <span class="log-ts">${new Date(a.time).toLocaleTimeString('de-DE')}</span>
+      <span class="log-type lt-${a.type}">${a.type}</span>
+      <span class="log-msg">${escHtml(a.message)}</span>
+    </div>
+  `).join('');
+}
+
+let leadsFilterActive = 'alle';
+function renderLeads(leads) {
+  const search = (document.getElementById('leadSearch').value || '').toLowerCase();
+  let filtered = leads;
+
+  if (leadsFilterActive !== 'alle') {
+    filtered = filtered.filter(l => l.status === leadsFilterActive);
+  }
+  if (search) {
+    filtered = filtered.filter(l =>
+      (l.name || '').toLowerCase().includes(search) ||
+      (l.city || '').toLowerCase().includes(search) ||
+      (l.email || '').toLowerCase().includes(search)
+    );
+  }
+
+  const tbody = document.getElementById('leadsTableBody');
+  const empty = document.getElementById('leadsEmpty');
+  setText('tableCount', filtered.length + ' Leads');
+
+  if (!filtered.length) {
+    tbody.innerHTML = '';
+    empty.style.display = 'block';
+    return;
+  }
+  empty.style.display = 'none';
+  tbody.innerHTML = filtered.map(l => `
+    <tr>
+      <td class="td-name">${escHtml(l.name || '—')}</td>
+      <td>${escHtml(l.city || '—')}</td>
+      <td class="td-email ${l.email ? '' : 'empty'}">${escHtml(l.email || '—')}</td>
+      <td>${l.website ? `<a href="${escHtml(l.website)}" target="_blank" style="color:var(--text3);font-size:11px;text-decoration:none;hover:color:var(--gold)">${truncate(l.website,30)}</a>` : '<span style="color:var(--text3)">—</span>'}</td>
+      <td><span class="status-pill status-${l.status || 'neu'}">${l.status || 'neu'}</span></td>
+      <td style="font-size:11px;color:var(--text3)">${l.scraped_at ? new Date(l.scraped_at).toLocaleDateString('de-DE') : '—'}</td>
+    </tr>
+  `).join('');
+}
+
+function setFilter(f, el) {
+  leadsFilterActive = f;
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  el.classList.add('active');
+  if (state) renderLeads(state.leads_preview || []);
+}
+function filterLeads() {
+  if (state) renderLeads(state.leads_preview || []);
+}
+
+// ── ACTIONS ──────────────────────────────────────────────────────────
+async function startScraper() {
+  showToast('Scraper wird gestartet...', 'info');
+  // In production: POST to local API
+  // For now just show info
+  if (!IS_LOCAL) {
+    showToast('Scraper nur lokal startbar — führe node index.js aus', 'info');
+    return;
+  }
+  try {
+    await fetch('/api/start-scraper', { method: 'POST' });
+    showToast('Scraper gestartet!', 'success');
+  } catch {
+    showToast('Starte: node leads_scraper.js im Terminal', 'info');
+  }
+}
+
+async function pushToGitHub() {
+  showToast('Push zu GitHub wird vorbereitet...', 'info');
+  if (!IS_LOCAL) { showToast('Nur lokal möglich', 'error'); return; }
+  try {
+    const res = await fetch('/api/push-github', { method: 'POST' });
+    const d = await res.json();
+    showToast('Dashboard live: ' + (d.url || 'GitHub Pages'), 'success');
+  } catch {
+    showToast('Starte: node deploy_dashboard.js im Terminal', 'info');
+  }
+}
+
+function clearLogs() {
+  document.getElementById('logFeed').innerHTML = '<div class="empty-state"><div class="empty-icon">📋</div><div class="empty-title">Logs gelöscht</div></div>';
+}
+
+// ── HELPERS ──────────────────────────────────────────────────────────
+function setText(id, val) { const el = document.getElementById(id); if (el) el.textContent = val; }
+function fmt(n) { return (n || 0).toLocaleString('de-DE'); }
+function pct(a, b) { return b > 0 ? Math.round((a / b) * 100) : 0; }
+function escHtml(s) { return String(s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+function truncate(s, n) { return s.length > n ? s.slice(0, n) + '...' : s; }
+function dotClass(type) {
+  if (['lead_found','lead_email'].includes(type)) return 'dot-lead';
+  if (['email_sent','email_opened','email_clicked'].includes(type)) return 'dot-email';
+  if (type === 'error') return 'dot-error';
+  if (['pipeline_done','batch_saved'].includes(type)) return 'dot-done';
+  return 'dot-info';
+}
+function timeAgo(iso) {
+  const diff = Math.floor((Date.now() - new Date(iso)) / 1000);
+  if (diff < 60) return diff + 's';
+  if (diff < 3600) return Math.floor(diff / 60) + 'min';
+  return Math.floor(diff / 3600) + 'h';
+}
+function showToast(msg, type = 'info') {
+  const t = document.getElementById('toast');
+  const el = document.createElement('div');
+  el.className = `toast-item toast-${type}`;
+  el.textContent = msg;
+  t.appendChild(el);
+  setTimeout(() => el.remove(), 4000);
+}
+</script>
+</body>
+</html>
