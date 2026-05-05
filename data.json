@@ -1,0 +1,25 @@
+{
+  "pipeline": {
+    "status": "idle",
+    "current_step": "Bereit",
+    "started_at": null,
+    "last_updated": "2026-05-05T12:44:40.000Z"
+  },
+  "stats": {
+    "total_leads": 0,
+    "leads_with_email": 0,
+    "emails_sent": 0,
+    "emails_opened": 0,
+    "emails_clicked": 0,
+    "follow_ups_sent": 0,
+    "replies": 0
+  },
+  "progress": {
+    "current_city": null,
+    "current_term": null,
+    "total_queries": 35,
+    "queries_done": 0
+  },
+  "activity": [],
+  "leads_preview": []
+}
