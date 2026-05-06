@@ -3,7 +3,7 @@
     "status": "running",
     "current_step": "Enrichment fertig — 0 Leads mit E-Mail",
     "started_at": "2026-05-05T15:06:50.899Z",
-    "last_updated": "2026-05-06T06:43:30.080Z"
+    "last_updated": "2026-05-06T06:49:36.106Z"
   },
   "stats": {
     "total_leads": 0,
@@ -21,6 +21,264 @@
     "queries_done": 28
   },
   "activity": [
+    {
+      "time": "2026-05-06T06:49:36.106Z",
+      "type": "pipeline_done",
+      "message": "Kampagne beendet: 0 E-Mails gesendet",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T06:49:33.063Z",
+      "type": "error",
+      "message": "Sendefehler info@gronewald.com: Invalid login: 535 ...authentication rejected",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T06:49:25.450Z",
+      "type": "error",
+      "message": "Sendefehler mail@kimia-productions.com: Invalid login: 535 ...authentication rejected",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T06:49:19.155Z",
+      "type": "error",
+      "message": "Sendefehler sales@annettegoertz.com: Invalid login: 535 ...authentication rejected",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T06:49:13.323Z",
+      "type": "error",
+      "message": "Sendefehler stefan.bille@axa.de: Invalid login: 535 ...authentication rejected",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T06:49:06.483Z",
+      "type": "error",
+      "message": "Sendefehler post@al-omary.com: Invalid login: 535 ...authentication rejected",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T06:48:58.573Z",
+      "type": "error",
+      "message": "Sendefehler kontakt@dm2030.de: Invalid login: 535 ...authentication rejected",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T06:48:48.742Z",
+      "type": "error",
+      "message": "Sendefehler wenner@agenturwenner.de: Invalid login: 535 ...authentication rejected",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T06:48:43.213Z",
+      "type": "error",
+      "message": "Sendefehler info@buescher-medien.de: Invalid login: 535 ...authentication rejected",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T06:48:33.008Z",
+      "type": "error",
+      "message": "Sendefehler redaktion@eu-info.de: Invalid login: 535 ...authentication rejected",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T06:48:26.320Z",
+      "type": "error",
+      "message": "Sendefehler bewerbung@kultkom.de: Invalid login: 535 ...authentication rejected",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T06:48:19.253Z",
+      "type": "error",
+      "message": "Sendefehler jr@filmgesichter.de: Invalid login: 535 ...authentication rejected",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T06:48:10.753Z",
+      "type": "error",
+      "message": "Sendefehler mail@dlc.berlin: Invalid login: 535 ...authentication rejected",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T06:48:03.686Z",
+      "type": "error",
+      "message": "Sendefehler service-hms@heise.de: Invalid login: 535 ...authentication rejected",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T06:47:55.904Z",
+      "type": "error",
+      "message": "Sendefehler office@iml-kommunikation.de: Invalid login: 535 ...authentication rejected",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T06:47:48.936Z",
+      "type": "error",
+      "message": "Sendefehler macke@scua-hamburg.de: Invalid login: 535 ...authentication rejected",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T06:47:42.387Z",
+      "type": "error",
+      "message": "Sendefehler medien@trillercommunication.com: Invalid login: 535 ...authentication rejected",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T06:47:35.462Z",
+      "type": "error",
+      "message": "Sendefehler info@webrgb.de: Invalid login: 535 ...authentication rejected",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T06:47:28.130Z",
+      "type": "error",
+      "message": "Sendefehler kontakt@addm.de: Invalid login: 535 ...authentication rejected",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T06:47:22.011Z",
+      "type": "error",
+      "message": "Sendefehler hey@we-site.de: Invalid login: 535 ...authentication rejected",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T06:47:16.067Z",
+      "type": "error",
+      "message": "Sendefehler hello@pola-purpose.de: Invalid login: 535 ...authentication rejected",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T06:47:09.619Z",
+      "type": "error",
+      "message": "Sendefehler info@vtshamburg.de: Invalid login: 535 ...authentication rejected",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T06:47:01.419Z",
+      "type": "error",
+      "message": "Sendefehler hello@apoio-digital.com: Invalid login: 535 ...authentication rejected",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T06:46:53.369Z",
+      "type": "error",
+      "message": "Sendefehler urlaub@reisebuero-sydow.de: Invalid login: 535 ...authentication rejected",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T06:46:45.094Z",
+      "type": "error",
+      "message": "Sendefehler info@republic-affairs.com: Invalid login: 535 ...authentication rejected",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T06:46:36.732Z",
+      "type": "error",
+      "message": "Sendefehler eugen.guenter@sellwerk.de: Invalid login: 535 ...authentication rejected",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T06:46:29.319Z",
+      "type": "error",
+      "message": "Sendefehler reservierung@ganymed-brasserie.de: Invalid login: 535 ...authentication rejected",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T06:46:22.403Z",
+      "type": "error",
+      "message": "Sendefehler ae@astrideckstein.de: Invalid login: 535 ...authentication rejected",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T06:46:14.732Z",
+      "type": "error",
+      "message": "Sendefehler sprichmituns@wearesocial.de: Invalid login: 535 ...authentication rejected",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T06:46:07.572Z",
+      "type": "error",
+      "message": "Sendefehler rfq@reppublika.com: Invalid login: 535 ...authentication rejected",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T06:46:00.306Z",
+      "type": "error",
+      "message": "Sendefehler info@featuresandcreatures.com: Invalid login: 535 ...authentication rejected",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T06:45:51.792Z",
+      "type": "error",
+      "message": "Sendefehler info@redforest.de: Invalid login: 535 ...authentication rejected",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T06:45:45.651Z",
+      "type": "error",
+      "message": "Sendefehler info@eurolizenzen.net: Invalid login: 535 ...authentication rejected",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T06:45:39.866Z",
+      "type": "error",
+      "message": "Sendefehler info@limited24.de: Invalid login: 535 ...authentication rejected",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T06:45:33.155Z",
+      "type": "error",
+      "message": "Sendefehler kristina@frauentermine.de: Invalid login: 535 ...authentication rejected",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T06:45:25.887Z",
+      "type": "error",
+      "message": "Sendefehler philippoff@primafila-artists.com: Invalid login: 535 ...authentication rejected",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T06:45:19.412Z",
+      "type": "error",
+      "message": "Sendefehler info@kopfbrand.com: Invalid login: 535 ...authentication rejected",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T06:45:13.458Z",
+      "type": "error",
+      "message": "Sendefehler info@sportsmedianetwork.de: Invalid login: 535 ...authentication rejected",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T06:45:07.877Z",
+      "type": "error",
+      "message": "Sendefehler info@consense-communications.de: Invalid login: 535 ...authentication rejected",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T06:45:02.040Z",
+      "type": "error",
+      "message": "Sendefehler info@dvag.com: Invalid login: 535 ...authentication rejected",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T06:44:56.810Z",
+      "type": "error",
+      "message": "Sendefehler anfrage@jkv-media.de: Invalid login: 535 ...authentication rejected",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T06:44:53.213Z",
+      "type": "pipeline_start",
+      "message": "Kampagne gestartet: 40 Empfänger",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T06:44:17.271Z",
+      "type": "pipeline_start",
+      "message": "Kampagne gestartet: 40 Empfänger (Dry Run)",
+      "data": {}
+    },
     {
       "time": "2026-05-06T06:43:30.080Z",
       "type": "pipeline_done",
@@ -961,264 +1219,6 @@
       "time": "2026-05-05T18:31:05.833Z",
       "type": "lead_enriched",
       "message": "Euro Lizenzen: info@eurolizenzen.net",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T18:30:58.587Z",
-      "type": "lead_enriched",
-      "message": "Privance GbR The Private Assistance Büro München: anfrage@jkv-media.de",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T18:30:51.184Z",
-      "type": "lead_enriched",
-      "message": "Companea GmbH: info@limited24.de",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T18:30:44.581Z",
-      "type": "lead_enriched",
-      "message": "Wendt Martina: kristina@frauentermine.de",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T18:30:34.863Z",
-      "type": "lead_enriched",
-      "message": "Primafila Artists GmbH: philippoff@primafila-artists.com",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T18:30:27.273Z",
-      "type": "lead_enriched",
-      "message": "Kopfbrand e.K.: info@kopfbrand.com",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T18:29:57.369Z",
-      "type": "lead_enriched",
-      "message": "Sports Media Network GmbH & Co. KG: info@sportsmedianetwork.de",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T18:29:47.345Z",
-      "type": "lead_enriched",
-      "message": "consense communications GmbH: info@consense-communications.de",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T18:29:40.001Z",
-      "type": "lead_enriched",
-      "message": "DVAG Agentur Serkan Öztürk: info@dvag.com",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T18:29:32.510Z",
-      "type": "lead_enriched",
-      "message": "Astrid Eckstein Live! GmbH: ae@astrideckstein.de",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T18:29:16.182Z",
-      "type": "lead_enriched",
-      "message": "STILLSTARS GmbH: 29hello@stillstars.comnewsletterhello",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T18:29:08.783Z",
-      "type": "lead_enriched",
-      "message": "We Are Social Deutschland GmbH: sprichmituns@wearesocial.de",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T18:28:58.988Z",
-      "type": "lead_enriched",
-      "message": "Pintsch Andrea: anfrage@jkv-media.de",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T18:28:51.508Z",
-      "type": "lead_enriched",
-      "message": "DCORE GmbH: rfq@reppublika.com",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T18:28:34.883Z",
-      "type": "lead_enriched",
-      "message": "features and creatures GmbH: info@featuresandcreatures.com",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T18:28:27.583Z",
-      "type": "lead_enriched",
-      "message": "Red Forest: info@redforest.de",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T18:28:19.876Z",
-      "type": "lead_enriched",
-      "message": "Euro Lizenzen: info@eurolizenzen.net",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T18:28:11.308Z",
-      "type": "lead_enriched",
-      "message": "Privance GbR The Private Assistance Büro München: anfrage@jkv-media.de",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T18:28:02.509Z",
-      "type": "lead_enriched",
-      "message": "Companea GmbH: info@limited24.de",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T18:27:55.140Z",
-      "type": "lead_enriched",
-      "message": "Wendt Martina: kristina@frauentermine.de",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T18:27:45.712Z",
-      "type": "lead_enriched",
-      "message": "Primafila Artists GmbH: philippoff@primafila-artists.com",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T18:27:38.196Z",
-      "type": "lead_enriched",
-      "message": "Kopfbrand e.K.: info@kopfbrand.com",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T18:27:06.336Z",
-      "type": "lead_enriched",
-      "message": "Sports Media Network GmbH & Co. KG: info@sportsmedianetwork.de",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T18:26:57.871Z",
-      "type": "lead_enriched",
-      "message": "consense communications GmbH: info@consense-communications.de",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T18:26:49.655Z",
-      "type": "lead_enriched",
-      "message": "DVAG Agentur Serkan Öztürk: info@dvag.com",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T18:26:41.871Z",
-      "type": "pipeline_start",
-      "message": "Enrichment: 435 Leads",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T18:26:26.646Z",
-      "type": "pipeline_done",
-      "message": "Enrichment: 3 neue E-Mails",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T18:26:25.178Z",
-      "type": "lead_enriched",
-      "message": "Sports Media Network GmbH & Co. KG: info@sportsmedianetwork.de",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T18:26:15.834Z",
-      "type": "lead_enriched",
-      "message": "consense communications GmbH: info@consense-communications.de",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T18:26:07.826Z",
-      "type": "lead_enriched",
-      "message": "DVAG Agentur Serkan Öztürk: info@dvag.com",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T18:26:00.102Z",
-      "type": "pipeline_start",
-      "message": "Enrichment: 3 Leads",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T18:23:06.144Z",
-      "type": "pipeline_done",
-      "message": "Enrichment: 0 neue E-Mails gefunden",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T18:22:38.375Z",
-      "type": "pipeline_start",
-      "message": "Enrichment: 5 Leads",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T18:09:01.460Z",
-      "type": "pipeline_done",
-      "message": "Kampagne beendet: 0 E-Mails gesendet",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T18:09:01.447Z",
-      "type": "pipeline_start",
-      "message": "Kampagne gestartet: 0 Empfänger (Dry Run)",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T15:11:40.350Z",
-      "type": "batch_saved",
-      "message": "Zwischenstand: 0 Leads gespeichert",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T15:11:40.347Z",
-      "type": "error",
-      "message": "Fehler bei \"GmbH Hamburg\": page.goto: Target page, context or browser has been closed",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T15:11:40.343Z",
-      "type": "scrape_start",
-      "message": "Scrape gestartet: \"GmbH Hamburg\"",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T15:11:32.081Z",
-      "type": "batch_saved",
-      "message": "Zwischenstand: 0 Leads gespeichert",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T15:11:32.077Z",
-      "type": "error",
-      "message": "Fehler bei \"Beratung Hamburg\": page.goto: Target page, context or browser has been closed",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T15:11:32.073Z",
-      "type": "scrape_start",
-      "message": "Scrape gestartet: \"Beratung Hamburg\"",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T15:11:24.955Z",
-      "type": "batch_saved",
-      "message": "Zwischenstand: 0 Leads gespeichert",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T15:11:24.949Z",
-      "type": "error",
-      "message": "Fehler bei \"Agentur Hamburg\": page.goto: Target page, context or browser has been closed",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T15:11:24.947Z",
-      "type": "scrape_start",
-      "message": "Scrape gestartet: \"Agentur Hamburg\"",
       "data": {}
     }
   ],
