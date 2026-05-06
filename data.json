@@ -1,14 +1,14 @@
 {
   "pipeline": {
     "status": "running",
-    "current_step": "Scraping: GmbH Hamburg",
+    "current_step": "Enrichment fertig — 0 Leads mit E-Mail",
     "started_at": "2026-05-05T15:06:50.899Z",
-    "last_updated": "2026-05-05T18:09:01.460Z"
+    "last_updated": "2026-05-06T06:43:30.080Z"
   },
   "stats": {
     "total_leads": 0,
-    "leads_with_email": 0,
-    "emails_sent": 0,
+    "leads_with_email": 125,
+    "emails_sent": 4,
     "emails_opened": 0,
     "emails_clicked": 0,
     "follow_ups_sent": 0,
@@ -21,6 +21,1140 @@
     "queries_done": 28
   },
   "activity": [
+    {
+      "time": "2026-05-06T06:43:30.080Z",
+      "type": "pipeline_done",
+      "message": "Kampagne beendet: 4 E-Mails gesendet",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T06:43:25.524Z",
+      "type": "error",
+      "message": "Sendefehler wspartner@wspartner.de: Invalid login: 535 ...authentication rejected",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T06:43:18.462Z",
+      "type": "error",
+      "message": "Sendefehler info@pfister-steuer.de: Invalid login: 535 ...authentication rejected",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T06:43:13.149Z",
+      "type": "error",
+      "message": "Sendefehler info@denic.de: Invalid login: 535 ...authentication rejected",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T06:43:05.802Z",
+      "type": "error",
+      "message": "Sendefehler info@kisslinger-popp.de: Invalid login: 535 ...authentication rejected",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T06:43:00.001Z",
+      "type": "error",
+      "message": "Sendefehler info@kanzlei-schmuttermaier.de: Invalid login: 535 ...authentication rejected",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T06:42:51.975Z",
+      "type": "error",
+      "message": "Sendefehler badkoetzting@neo-kanzlei.de: Invalid login: 535 ...authentication rejected",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T06:42:42.891Z",
+      "type": "error",
+      "message": "Sendefehler kanzlei@kanzlei-fahn.de: Invalid login: 535 ...authentication rejected",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T06:42:35.519Z",
+      "type": "error",
+      "message": "Sendefehler info@epsg.de: Invalid login: 535 ...authentication rejected",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T06:42:29.401Z",
+      "type": "error",
+      "message": "Sendefehler support@infektionsschutzbelehrungonline.de: Invalid login: 535 ...authentication rejected",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T06:42:21.494Z",
+      "type": "error",
+      "message": "Sendefehler mail@en-be.de: Invalid login: 535 ...authentication rejected",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T06:42:13.473Z",
+      "type": "error",
+      "message": "Sendefehler info@revisa-treuhand.de: Invalid login: 535 ...authentication rejected",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T06:42:05.901Z",
+      "type": "error",
+      "message": "Sendefehler kontakt-stuttgart@gn-bauphysik.com: Invalid login: 535 ...authentication rejected",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T06:41:58.932Z",
+      "type": "error",
+      "message": "Sendefehler info@freiberger-kanzlei.de: Invalid login: 535 ...authentication rejected",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T06:41:50.976Z",
+      "type": "error",
+      "message": "Sendefehler info@aktc.info: Invalid login: 535 ...authentication rejected",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T06:41:43.265Z",
+      "type": "error",
+      "message": "Sendefehler info@gronewald.com: Invalid login: 535 ...authentication rejected",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T06:41:37.362Z",
+      "type": "error",
+      "message": "Sendefehler mail@kimia-productions.com: Invalid login: 535 ...authentication rejected",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T06:41:29.647Z",
+      "type": "error",
+      "message": "Sendefehler sales@annettegoertz.com: Invalid login: 535 ...authentication rejected",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T06:41:21.384Z",
+      "type": "error",
+      "message": "Sendefehler stefan.bille@axa.de: Invalid login: 535 ...authentication rejected",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T06:41:13.399Z",
+      "type": "error",
+      "message": "Sendefehler post@al-omary.com: Invalid login: 535 ...authentication rejected",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T06:41:05.581Z",
+      "type": "error",
+      "message": "Sendefehler kontakt@dm2030.de: Invalid login: 535 ...authentication rejected",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T06:40:58.236Z",
+      "type": "error",
+      "message": "Sendefehler eugen.guenter@sellwerk.de: Invalid login: 535 ...authentication rejected",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T06:40:51.046Z",
+      "type": "error",
+      "message": "Sendefehler reservierung@ganymed-brasserie.de: Invalid login: 535 ...authentication rejected",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T06:40:44.901Z",
+      "type": "error",
+      "message": "Sendefehler wenner@agenturwenner.de: Invalid login: 535 ...authentication rejected",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T06:40:37.038Z",
+      "type": "error",
+      "message": "Sendefehler info@republic-affairs.com: Invalid login: 535 ...authentication rejected",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T06:40:29.258Z",
+      "type": "error",
+      "message": "Sendefehler info@buescher-medien.de: Invalid login: 535 ...authentication rejected",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T06:40:22.233Z",
+      "type": "error",
+      "message": "Sendefehler redaktion@eu-info.de: Invalid login: 535 ...authentication rejected",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T06:40:14.286Z",
+      "type": "error",
+      "message": "Sendefehler bewerbung@kultkom.de: Invalid login: 535 ...authentication rejected",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T06:40:06.609Z",
+      "type": "error",
+      "message": "Sendefehler jr@filmgesichter.de: Invalid login: 535 ...authentication rejected",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T06:39:59.536Z",
+      "type": "error",
+      "message": "Sendefehler mail@dlc.berlin: Invalid login: 535 ...authentication rejected",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T06:39:53.565Z",
+      "type": "error",
+      "message": "Sendefehler service-hms@heise.de: Invalid login: 535 ...authentication rejected",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T06:39:44.791Z",
+      "type": "error",
+      "message": "Sendefehler office@iml-kommunikation.de: Invalid login: 535 ...authentication rejected",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T06:39:36.675Z",
+      "type": "error",
+      "message": "Sendefehler macke@scua-hamburg.de: Invalid login: 535 ...authentication rejected",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T06:39:28.886Z",
+      "type": "error",
+      "message": "Sendefehler medien@trillercommunication.com: Invalid login: 535 ...authentication rejected",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T06:39:22.579Z",
+      "type": "error",
+      "message": "Sendefehler info@webrgb.de: Invalid login: 535 ...authentication rejected",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T06:39:15.709Z",
+      "type": "error",
+      "message": "Sendefehler kontakt@addm.de: Invalid login: 535 ...authentication rejected",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T06:39:09.566Z",
+      "type": "error",
+      "message": "Sendefehler hey@we-site.de: Invalid login: 535 ...authentication rejected",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T06:39:03.902Z",
+      "type": "error",
+      "message": "Sendefehler hello@pola-purpose.de: Invalid login: 535 ...authentication rejected",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T06:38:56.309Z",
+      "type": "error",
+      "message": "Sendefehler info@vtshamburg.de: Invalid login: 535 ...authentication rejected",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T06:38:49.394Z",
+      "type": "error",
+      "message": "Sendefehler hello@apoio-digital.com: Invalid login: 535 ...authentication rejected",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T06:38:42.207Z",
+      "type": "error",
+      "message": "Sendefehler urlaub@reisebuero-sydow.de: Invalid login: 535 ...authentication rejected",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T06:38:36.463Z",
+      "type": "error",
+      "message": "Sendefehler ae@astrideckstein.de: Invalid login: 535 ...authentication rejected",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T06:38:30.927Z",
+      "type": "error",
+      "message": "Sendefehler sprichmituns@wearesocial.de: Invalid login: 535 ...authentication rejected",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T06:38:23.178Z",
+      "type": "error",
+      "message": "Sendefehler rfq@reppublika.com: Invalid login: 535 ...authentication rejected",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T06:38:15.271Z",
+      "type": "error",
+      "message": "Sendefehler info@featuresandcreatures.com: Invalid login: 535 ...authentication rejected",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T06:38:09.252Z",
+      "type": "error",
+      "message": "Sendefehler info@redforest.de: Invalid login: 535 ...authentication rejected",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T06:38:01.683Z",
+      "type": "error",
+      "message": "Sendefehler info@eurolizenzen.net: Invalid login: 535 ...authentication rejected",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T06:37:55.739Z",
+      "type": "error",
+      "message": "Sendefehler anfrage@jkv-media.de: Invalid login: 535 ...authentication rejected",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T06:37:48.334Z",
+      "type": "error",
+      "message": "Sendefehler info@limited24.de: Invalid login: 535 ...authentication rejected",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T06:37:41.748Z",
+      "type": "error",
+      "message": "Sendefehler kristina@frauentermine.de: Invalid login: 535 ...authentication rejected",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T06:37:36.306Z",
+      "type": "error",
+      "message": "Sendefehler philippoff@primafila-artists.com: Invalid login: 535 ...authentication rejected",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T06:37:29.614Z",
+      "type": "email_sent",
+      "message": "Gesendet: Kopfbrand e.K. <info@kopfbrand.com>",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T06:37:19.968Z",
+      "type": "email_sent",
+      "message": "Gesendet: Sports Media Network GmbH & Co. KG <info@sportsmedianetwork.de>",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T06:37:11.345Z",
+      "type": "email_sent",
+      "message": "Gesendet: consense communications GmbH <info@consense-communications.de>",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T06:37:03.688Z",
+      "type": "email_sent",
+      "message": "Gesendet: DVAG Agentur Serkan Öztürk <info@dvag.com>",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T06:36:56.520Z",
+      "type": "pipeline_start",
+      "message": "Kampagne gestartet: 54 Empfänger",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T06:36:54.797Z",
+      "type": "lead_enriched",
+      "message": "Wendt Martina: kristina@frauentermine.de",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T06:36:45.074Z",
+      "type": "lead_enriched",
+      "message": "Primafila Artists GmbH: philippoff@primafila-artists.com",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T06:36:37.638Z",
+      "type": "lead_enriched",
+      "message": "Kopfbrand e.K.: info@kopfbrand.com",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T19:07:31.874Z",
+      "type": "lead_enriched",
+      "message": "Dr. Schmidt Partners GmbH Steuerberatungsgesellschaft: wspartner@wspartner.de",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T19:07:15.479Z",
+      "type": "lead_enriched",
+      "message": "Michael Pfister Steuerberater: info@pfister-steuer.de",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T19:07:05.347Z",
+      "type": "lead_enriched",
+      "message": "Koschkar & Schollmeyer Steuerberatungsgesellschaft mbH: info@denic.de",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T19:06:57.311Z",
+      "type": "lead_enriched",
+      "message": "Kisslinger-Popp & Partner PartG mbB Steuerberater- und Rechtsanwaltskanzlei: info@kisslinger-popp.de",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T19:06:48.338Z",
+      "type": "lead_enriched",
+      "message": "Steuerberater Michael Schmuttermaier: info@kanzlei-schmuttermaier.de",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T19:06:38.192Z",
+      "type": "lead_enriched",
+      "message": "neo Steuerberatungsgesellschaft München mbH: badkoetzting@neo-kanzlei.de",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T19:06:28.074Z",
+      "type": "lead_enriched",
+      "message": "FAHN & Partner Wirtschaftspürfer Steuerberater München mbB: kanzlei@kanzlei-fahn.de",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T19:06:14.495Z",
+      "type": "lead_enriched",
+      "message": "Ebermann u. Partner Steuerberatungsgesellschaft mbB: info@epsg.de",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T19:06:05.932Z",
+      "type": "lead_enriched",
+      "message": "Infektionsschutzbelehrung Online - Marc Bielenberg: support@infektionsschutzbelehrungonline.de",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T19:05:53.997Z",
+      "type": "lead_enriched",
+      "message": "enbe Energieberatung GmbH: mail@en-be.de",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T19:05:45.375Z",
+      "type": "lead_enriched",
+      "message": "REVISA Wirtschaftsprüfung Steuerberatung: info@revisa-treuhand.de",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T19:05:31.972Z",
+      "type": "lead_enriched",
+      "message": "GN Bauphysik Finkenberger + Kollegen Ingenieurgesellschaft mbH: kontakt-stuttgart@gn-bauphysik.com",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T19:05:22.977Z",
+      "type": "lead_enriched",
+      "message": "Freiberger Steuerberatungsgesellschaft mbH: info@freiberger-kanzlei.de",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T19:05:13.706Z",
+      "type": "lead_enriched",
+      "message": "Dr. Weigl Augustinowski Treuconsult GmbH: info@aktc.info",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T19:05:04.277Z",
+      "type": "lead_enriched",
+      "message": "Gronewald Agentur: info@gronewald.com",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T19:04:55.767Z",
+      "type": "lead_enriched",
+      "message": "Amiri Katja: mail@kimia-productions.com",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T19:04:47.228Z",
+      "type": "lead_enriched",
+      "message": "Fleishman-Hillard Germany GmbH: eugen.guenter@sellwerk.de",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T19:04:25.843Z",
+      "type": "lead_enriched",
+      "message": "Görtz-Welsch Modedesign GmbH Agenturen: sales@annettegoertz.com",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T19:04:15.980Z",
+      "type": "lead_enriched",
+      "message": "Republic Affairs GmbH: info@republic-affairs.com",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T19:04:05.609Z",
+      "type": "lead_enriched",
+      "message": "AXA Versicherung Berlin Mitte - Bille Agentur: stefan.bille@axa.de",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T19:03:56.938Z",
+      "type": "lead_enriched",
+      "message": "Plato GmbH: eugen.guenter@sellwerk.de",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T19:03:45.464Z",
+      "type": "lead_enriched",
+      "message": "Falk Siad Al-Omary Medien-Management: post@al-omary.com",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T19:03:35.920Z",
+      "type": "lead_enriched",
+      "message": "Deutschland mobil 2030 GmbH: kontakt@dm2030.de",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T19:03:26.832Z",
+      "type": "lead_enriched",
+      "message": "dpa Deutsche Presse-Agentur GmbH: eugen.guenter@sellwerk.de",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T19:03:14.577Z",
+      "type": "lead_enriched",
+      "message": "pr berlin Public Relations GmbH: reservierung@ganymed-brasserie.de",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T19:03:04.183Z",
+      "type": "lead_enriched",
+      "message": "pr Berlin Public Relation GmbH: reservierung@ganymed-brasserie.de",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T19:02:53.593Z",
+      "type": "lead_enriched",
+      "message": "Wenner Barbara Literaturagentur: wenner@agenturwenner.de",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T19:02:43.477Z",
+      "type": "lead_enriched",
+      "message": "Republic Affairs GmbH: info@republic-affairs.com",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T19:02:31.208Z",
+      "type": "lead_enriched",
+      "message": "Büscher & Andere Agentur für strategische Medienberatung: info@buescher-medien.de",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T19:02:22.932Z",
+      "type": "lead_enriched",
+      "message": "Euro - Informationen Agentur für Public Relations: redaktion@eu-info.de",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T19:02:13.819Z",
+      "type": "lead_enriched",
+      "message": "kultkom - Kerstin Wiehe KULTURMANAGEMENT & KOMMUNIKATION Agentur für Kultur: bewerbung@kultkom.de",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T19:02:01.068Z",
+      "type": "lead_enriched",
+      "message": "Agentur Filmgesichter, Inh. Johanna Ragwitz: jr@filmgesichter.de",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T19:01:52.582Z",
+      "type": "lead_enriched",
+      "message": "DLC Agentur Berlin GmbH: mail@dlc.berlin",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T19:01:43.410Z",
+      "type": "lead_enriched",
+      "message": "Michels Karen u. Buttler Joachim Dres. Agentur für Kunst: service-hms@heise.de",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T19:01:31.828Z",
+      "type": "lead_enriched",
+      "message": "IML Kommunikation UG (haftungsbeschränkt): office@iml-kommunikation.de",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T19:00:58.474Z",
+      "type": "lead_enriched",
+      "message": "Scandinavian Underwriters Agency GmbH: macke@scua-hamburg.de",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T19:00:49.721Z",
+      "type": "lead_enriched",
+      "message": "Ursula Triller Triller Communication: medien@trillercommunication.com",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T18:59:58.950Z",
+      "type": "lead_enriched",
+      "message": "Webdesign Agentur webrgb: info@webrgb.de",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T18:59:47.118Z",
+      "type": "lead_enriched",
+      "message": "addM GmbH - Agentur für digitales Wachstum: kontakt@addm.de",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T18:59:34.945Z",
+      "type": "lead_enriched",
+      "message": "we-site GmbH: hey@we-site.de",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T18:58:45.795Z",
+      "type": "lead_enriched",
+      "message": "Pola - Agentur für Webdesign und Webentwicklung: hello@pola-purpose.de",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T18:58:34.017Z",
+      "type": "lead_enriched",
+      "message": "GLOBAL VISA TRAVEL SERVICE: info@vtshamburg.de",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T18:58:20.350Z",
+      "type": "lead_enriched",
+      "message": "apoio GmbH: hello@apoio-digital.com",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T18:58:11.647Z",
+      "type": "lead_enriched",
+      "message": "Reisebüro Sydow: urlaub@reisebuero-sydow.de",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T18:58:01.920Z",
+      "type": "lead_enriched",
+      "message": "Astrid Eckstein Live! GmbH: ae@astrideckstein.de",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T18:57:42.164Z",
+      "type": "lead_enriched",
+      "message": "STILLSTARS GmbH: 29hello@stillstars.comnewsletterhello",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T18:57:33.981Z",
+      "type": "lead_enriched",
+      "message": "We Are Social Deutschland GmbH: sprichmituns@wearesocial.de",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T18:57:23.981Z",
+      "type": "lead_enriched",
+      "message": "Pintsch Andrea: anfrage@jkv-media.de",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T18:57:16.449Z",
+      "type": "lead_enriched",
+      "message": "DCORE GmbH: rfq@reppublika.com",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T18:57:00.263Z",
+      "type": "lead_enriched",
+      "message": "features and creatures GmbH: info@featuresandcreatures.com",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T18:56:52.033Z",
+      "type": "lead_enriched",
+      "message": "Red Forest: info@redforest.de",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T18:56:43.541Z",
+      "type": "lead_enriched",
+      "message": "Euro Lizenzen: info@eurolizenzen.net",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T18:56:35.208Z",
+      "type": "lead_enriched",
+      "message": "Privance GbR The Private Assistance Büro München: anfrage@jkv-media.de",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T18:56:26.579Z",
+      "type": "lead_enriched",
+      "message": "Companea GmbH: info@limited24.de",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T18:56:18.767Z",
+      "type": "lead_enriched",
+      "message": "Wendt Martina: kristina@frauentermine.de",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T18:56:07.857Z",
+      "type": "lead_enriched",
+      "message": "Primafila Artists GmbH: philippoff@primafila-artists.com",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T18:56:00.164Z",
+      "type": "lead_enriched",
+      "message": "Kopfbrand e.K.: info@kopfbrand.com",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T18:55:27.204Z",
+      "type": "lead_enriched",
+      "message": "Sports Media Network GmbH & Co. KG: info@sportsmedianetwork.de",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T18:55:16.789Z",
+      "type": "lead_enriched",
+      "message": "consense communications GmbH: info@consense-communications.de",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T18:55:07.771Z",
+      "type": "lead_enriched",
+      "message": "DVAG Agentur Serkan Öztürk: info@dvag.com",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T18:55:00.049Z",
+      "type": "lead_enriched",
+      "message": "Gronewald Agentur: info@gronewald.com",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T18:54:51.542Z",
+      "type": "lead_enriched",
+      "message": "Amiri Katja: mail@kimia-productions.com",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T18:54:44.012Z",
+      "type": "lead_enriched",
+      "message": "Fleishman-Hillard Germany GmbH: eugen.guenter@sellwerk.de",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T18:54:26.316Z",
+      "type": "lead_enriched",
+      "message": "Görtz-Welsch Modedesign GmbH Agenturen: sales@annettegoertz.com",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T18:54:18.376Z",
+      "type": "lead_enriched",
+      "message": "Republic Affairs GmbH: info@republic-affairs.com",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T18:54:09.289Z",
+      "type": "lead_enriched",
+      "message": "AXA Versicherung Berlin Mitte - Bille Agentur: stefan.bille@axa.de",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T18:54:00.214Z",
+      "type": "lead_enriched",
+      "message": "Plato GmbH: eugen.guenter@sellwerk.de",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T18:53:50.253Z",
+      "type": "lead_enriched",
+      "message": "Falk Siad Al-Omary Medien-Management: post@al-omary.com",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T18:53:39.403Z",
+      "type": "lead_enriched",
+      "message": "Deutschland mobil 2030 GmbH: kontakt@dm2030.de",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T18:53:32.382Z",
+      "type": "lead_enriched",
+      "message": "dpa Deutsche Presse-Agentur GmbH: eugen.guenter@sellwerk.de",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T18:53:21.917Z",
+      "type": "lead_enriched",
+      "message": "pr berlin Public Relations GmbH: reservierung@ganymed-brasserie.de",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T18:53:11.510Z",
+      "type": "lead_enriched",
+      "message": "pr Berlin Public Relation GmbH: reservierung@ganymed-brasserie.de",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T18:53:01.602Z",
+      "type": "lead_enriched",
+      "message": "Wenner Barbara Literaturagentur: wenner@agenturwenner.de",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T18:52:52.426Z",
+      "type": "lead_enriched",
+      "message": "Republic Affairs GmbH: info@republic-affairs.com",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T18:52:39.787Z",
+      "type": "lead_enriched",
+      "message": "Büscher & Andere Agentur für strategische Medienberatung: info@buescher-medien.de",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T18:52:31.787Z",
+      "type": "lead_enriched",
+      "message": "Euro - Informationen Agentur für Public Relations: redaktion@eu-info.de",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T18:52:23.367Z",
+      "type": "lead_enriched",
+      "message": "kultkom - Kerstin Wiehe KULTURMANAGEMENT & KOMMUNIKATION Agentur für Kultur: bewerbung@kultkom.de",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T18:52:09.917Z",
+      "type": "lead_enriched",
+      "message": "Agentur Filmgesichter, Inh. Johanna Ragwitz: jr@filmgesichter.de",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T18:52:01.781Z",
+      "type": "lead_enriched",
+      "message": "DLC Agentur Berlin GmbH: mail@dlc.berlin",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T18:51:52.317Z",
+      "type": "lead_enriched",
+      "message": "Michels Karen u. Buttler Joachim Dres. Agentur für Kunst: service-hms@heise.de",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T18:51:39.885Z",
+      "type": "lead_enriched",
+      "message": "IML Kommunikation UG (haftungsbeschränkt): office@iml-kommunikation.de",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T18:50:58.891Z",
+      "type": "lead_enriched",
+      "message": "Scandinavian Underwriters Agency GmbH: macke@scua-hamburg.de",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T18:50:48.576Z",
+      "type": "lead_enriched",
+      "message": "Ursula Triller Triller Communication: medien@trillercommunication.com",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T18:34:02.287Z",
+      "type": "lead_enriched",
+      "message": "Webdesign Agentur webrgb: info@webrgb.de",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T18:33:50.975Z",
+      "type": "lead_enriched",
+      "message": "addM GmbH - Agentur für digitales Wachstum: kontakt@addm.de",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T18:33:39.899Z",
+      "type": "lead_enriched",
+      "message": "we-site GmbH: hey@we-site.de",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T18:32:53.414Z",
+      "type": "lead_enriched",
+      "message": "Pola - Agentur für Webdesign und Webentwicklung: hello@pola-purpose.de",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T18:32:43.644Z",
+      "type": "lead_enriched",
+      "message": "GLOBAL VISA TRAVEL SERVICE: info@vtshamburg.de",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T18:32:31.288Z",
+      "type": "lead_enriched",
+      "message": "apoio GmbH: hello@apoio-digital.com",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T18:32:22.732Z",
+      "type": "lead_enriched",
+      "message": "Reisebüro Sydow: urlaub@reisebuero-sydow.de",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T18:32:12.989Z",
+      "type": "lead_enriched",
+      "message": "Astrid Eckstein Live! GmbH: ae@astrideckstein.de",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T18:31:56.306Z",
+      "type": "lead_enriched",
+      "message": "STILLSTARS GmbH: 29hello@stillstars.comnewsletterhello",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T18:31:49.167Z",
+      "type": "lead_enriched",
+      "message": "We Are Social Deutschland GmbH: sprichmituns@wearesocial.de",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T18:31:42.288Z",
+      "type": "lead_enriched",
+      "message": "Pintsch Andrea: anfrage@jkv-media.de",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T18:31:34.785Z",
+      "type": "lead_enriched",
+      "message": "DCORE GmbH: rfq@reppublika.com",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T18:31:20.655Z",
+      "type": "lead_enriched",
+      "message": "features and creatures GmbH: info@featuresandcreatures.com",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T18:31:13.352Z",
+      "type": "lead_enriched",
+      "message": "Red Forest: info@redforest.de",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T18:31:05.833Z",
+      "type": "lead_enriched",
+      "message": "Euro Lizenzen: info@eurolizenzen.net",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T18:30:58.587Z",
+      "type": "lead_enriched",
+      "message": "Privance GbR The Private Assistance Büro München: anfrage@jkv-media.de",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T18:30:51.184Z",
+      "type": "lead_enriched",
+      "message": "Companea GmbH: info@limited24.de",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T18:30:44.581Z",
+      "type": "lead_enriched",
+      "message": "Wendt Martina: kristina@frauentermine.de",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T18:30:34.863Z",
+      "type": "lead_enriched",
+      "message": "Primafila Artists GmbH: philippoff@primafila-artists.com",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T18:30:27.273Z",
+      "type": "lead_enriched",
+      "message": "Kopfbrand e.K.: info@kopfbrand.com",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T18:29:57.369Z",
+      "type": "lead_enriched",
+      "message": "Sports Media Network GmbH & Co. KG: info@sportsmedianetwork.de",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T18:29:47.345Z",
+      "type": "lead_enriched",
+      "message": "consense communications GmbH: info@consense-communications.de",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T18:29:40.001Z",
+      "type": "lead_enriched",
+      "message": "DVAG Agentur Serkan Öztürk: info@dvag.com",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T18:29:32.510Z",
+      "type": "lead_enriched",
+      "message": "Astrid Eckstein Live! GmbH: ae@astrideckstein.de",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T18:29:16.182Z",
+      "type": "lead_enriched",
+      "message": "STILLSTARS GmbH: 29hello@stillstars.comnewsletterhello",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T18:29:08.783Z",
+      "type": "lead_enriched",
+      "message": "We Are Social Deutschland GmbH: sprichmituns@wearesocial.de",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T18:28:58.988Z",
+      "type": "lead_enriched",
+      "message": "Pintsch Andrea: anfrage@jkv-media.de",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T18:28:51.508Z",
+      "type": "lead_enriched",
+      "message": "DCORE GmbH: rfq@reppublika.com",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T18:28:34.883Z",
+      "type": "lead_enriched",
+      "message": "features and creatures GmbH: info@featuresandcreatures.com",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T18:28:27.583Z",
+      "type": "lead_enriched",
+      "message": "Red Forest: info@redforest.de",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T18:28:19.876Z",
+      "type": "lead_enriched",
+      "message": "Euro Lizenzen: info@eurolizenzen.net",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T18:28:11.308Z",
+      "type": "lead_enriched",
+      "message": "Privance GbR The Private Assistance Büro München: anfrage@jkv-media.de",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T18:28:02.509Z",
+      "type": "lead_enriched",
+      "message": "Companea GmbH: info@limited24.de",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T18:27:55.140Z",
+      "type": "lead_enriched",
+      "message": "Wendt Martina: kristina@frauentermine.de",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T18:27:45.712Z",
+      "type": "lead_enriched",
+      "message": "Primafila Artists GmbH: philippoff@primafila-artists.com",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T18:27:38.196Z",
+      "type": "lead_enriched",
+      "message": "Kopfbrand e.K.: info@kopfbrand.com",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T18:27:06.336Z",
+      "type": "lead_enriched",
+      "message": "Sports Media Network GmbH & Co. KG: info@sportsmedianetwork.de",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T18:26:57.871Z",
+      "type": "lead_enriched",
+      "message": "consense communications GmbH: info@consense-communications.de",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T18:26:49.655Z",
+      "type": "lead_enriched",
+      "message": "DVAG Agentur Serkan Öztürk: info@dvag.com",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T18:26:41.871Z",
+      "type": "pipeline_start",
+      "message": "Enrichment: 435 Leads",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T18:26:26.646Z",
+      "type": "pipeline_done",
+      "message": "Enrichment: 3 neue E-Mails",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T18:26:25.178Z",
+      "type": "lead_enriched",
+      "message": "Sports Media Network GmbH & Co. KG: info@sportsmedianetwork.de",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T18:26:15.834Z",
+      "type": "lead_enriched",
+      "message": "consense communications GmbH: info@consense-communications.de",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T18:26:07.826Z",
+      "type": "lead_enriched",
+      "message": "DVAG Agentur Serkan Öztürk: info@dvag.com",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T18:26:00.102Z",
+      "type": "pipeline_start",
+      "message": "Enrichment: 3 Leads",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T18:23:06.144Z",
+      "type": "pipeline_done",
+      "message": "Enrichment: 0 neue E-Mails gefunden",
+      "data": {}
+    },
+    {
+      "time": "2026-05-05T18:22:38.375Z",
+      "type": "pipeline_start",
+      "message": "Enrichment: 5 Leads",
+      "data": {}
+    },
     {
       "time": "2026-05-05T18:09:01.460Z",
       "type": "pipeline_done",
@@ -85,468 +1219,6 @@
       "time": "2026-05-05T15:11:24.947Z",
       "type": "scrape_start",
       "message": "Scrape gestartet: \"Agentur Hamburg\"",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T15:11:17.470Z",
-      "type": "batch_saved",
-      "message": "Zwischenstand: 0 Leads gespeichert",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T15:11:17.468Z",
-      "type": "error",
-      "message": "Fehler bei \"Marketing München\": page.goto: Target page, context or browser has been closed",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T15:11:17.466Z",
-      "type": "scrape_start",
-      "message": "Scrape gestartet: \"Marketing München\"",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T15:11:07.198Z",
-      "type": "batch_saved",
-      "message": "Zwischenstand: 0 Leads gespeichert",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T15:11:07.194Z",
-      "type": "error",
-      "message": "Fehler bei \"Dienstleistung München\": page.goto: Target page, context or browser has been closed",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T15:11:07.191Z",
-      "type": "scrape_start",
-      "message": "Scrape gestartet: \"Dienstleistung München\"",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T15:10:57.644Z",
-      "type": "batch_saved",
-      "message": "Zwischenstand: 0 Leads gespeichert",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T15:10:57.641Z",
-      "type": "error",
-      "message": "Fehler bei \"GmbH München\": page.goto: Target page, context or browser has been closed",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T15:10:57.636Z",
-      "type": "scrape_start",
-      "message": "Scrape gestartet: \"GmbH München\"",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T15:10:47.450Z",
-      "type": "batch_saved",
-      "message": "Zwischenstand: 0 Leads gespeichert",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T15:10:47.447Z",
-      "type": "error",
-      "message": "Fehler bei \"Beratung München\": page.goto: Target page, context or browser has been closed",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T15:10:47.444Z",
-      "type": "scrape_start",
-      "message": "Scrape gestartet: \"Beratung München\"",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T15:10:35.666Z",
-      "type": "batch_saved",
-      "message": "Zwischenstand: 0 Leads gespeichert",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T15:10:35.662Z",
-      "type": "error",
-      "message": "Fehler bei \"Agentur München\": page.goto: Target page, context or browser has been closed",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T15:10:35.659Z",
-      "type": "scrape_start",
-      "message": "Scrape gestartet: \"Agentur München\"",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T15:10:29.037Z",
-      "type": "batch_saved",
-      "message": "Zwischenstand: 0 Leads gespeichert",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T15:10:29.032Z",
-      "type": "error",
-      "message": "Fehler bei \"Marketing Wien\": page.goto: Target page, context or browser has been closed",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T15:10:29.028Z",
-      "type": "scrape_start",
-      "message": "Scrape gestartet: \"Marketing Wien\"",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T15:10:20.608Z",
-      "type": "batch_saved",
-      "message": "Zwischenstand: 0 Leads gespeichert",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T15:10:20.606Z",
-      "type": "error",
-      "message": "Fehler bei \"Dienstleistung Wien\": page.goto: Target page, context or browser has been closed",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T15:10:20.604Z",
-      "type": "scrape_start",
-      "message": "Scrape gestartet: \"Dienstleistung Wien\"",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T15:10:14.563Z",
-      "type": "batch_saved",
-      "message": "Zwischenstand: 0 Leads gespeichert",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T15:10:14.559Z",
-      "type": "error",
-      "message": "Fehler bei \"GmbH Wien\": page.goto: Target page, context or browser has been closed",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T15:10:14.553Z",
-      "type": "scrape_start",
-      "message": "Scrape gestartet: \"GmbH Wien\"",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T15:10:06.514Z",
-      "type": "batch_saved",
-      "message": "Zwischenstand: 0 Leads gespeichert",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T15:10:06.510Z",
-      "type": "error",
-      "message": "Fehler bei \"Beratung Wien\": page.goto: Target page, context or browser has been closed",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T15:10:06.502Z",
-      "type": "scrape_start",
-      "message": "Scrape gestartet: \"Beratung Wien\"",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T15:09:57.165Z",
-      "type": "batch_saved",
-      "message": "Zwischenstand: 0 Leads gespeichert",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T15:09:57.162Z",
-      "type": "error",
-      "message": "Fehler bei \"Agentur Wien\": page.goto: Target page, context or browser has been closed",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T15:09:57.159Z",
-      "type": "scrape_start",
-      "message": "Scrape gestartet: \"Agentur Wien\"",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T15:09:49.765Z",
-      "type": "batch_saved",
-      "message": "Zwischenstand: 0 Leads gespeichert",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T15:09:49.762Z",
-      "type": "error",
-      "message": "Fehler bei \"Marketing Bern\": page.goto: Target page, context or browser has been closed",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T15:09:49.757Z",
-      "type": "scrape_start",
-      "message": "Scrape gestartet: \"Marketing Bern\"",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T15:09:40.209Z",
-      "type": "batch_saved",
-      "message": "Zwischenstand: 0 Leads gespeichert",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T15:09:40.205Z",
-      "type": "error",
-      "message": "Fehler bei \"Dienstleistung Bern\": page.goto: Target page, context or browser has been closed",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T15:09:40.201Z",
-      "type": "scrape_start",
-      "message": "Scrape gestartet: \"Dienstleistung Bern\"",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T15:09:28.406Z",
-      "type": "batch_saved",
-      "message": "Zwischenstand: 0 Leads gespeichert",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T15:09:28.401Z",
-      "type": "error",
-      "message": "Fehler bei \"GmbH Bern\": page.goto: Target page, context or browser has been closed",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T15:09:28.397Z",
-      "type": "scrape_start",
-      "message": "Scrape gestartet: \"GmbH Bern\"",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T15:09:20.814Z",
-      "type": "batch_saved",
-      "message": "Zwischenstand: 0 Leads gespeichert",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T15:09:20.810Z",
-      "type": "error",
-      "message": "Fehler bei \"Beratung Bern\": page.goto: Target page, context or browser has been closed",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T15:09:20.806Z",
-      "type": "scrape_start",
-      "message": "Scrape gestartet: \"Beratung Bern\"",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T15:09:08.869Z",
-      "type": "batch_saved",
-      "message": "Zwischenstand: 0 Leads gespeichert",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T15:09:08.866Z",
-      "type": "error",
-      "message": "Fehler bei \"Agentur Bern\": page.goto: Target page, context or browser has been closed",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T15:09:08.863Z",
-      "type": "scrape_start",
-      "message": "Scrape gestartet: \"Agentur Bern\"",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T15:08:58.037Z",
-      "type": "batch_saved",
-      "message": "Zwischenstand: 0 Leads gespeichert",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T15:08:58.036Z",
-      "type": "error",
-      "message": "Fehler bei \"Marketing Basel\": page.goto: Target page, context or browser has been closed",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T15:08:58.035Z",
-      "type": "scrape_start",
-      "message": "Scrape gestartet: \"Marketing Basel\"",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T15:08:46.880Z",
-      "type": "batch_saved",
-      "message": "Zwischenstand: 0 Leads gespeichert",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T15:08:46.877Z",
-      "type": "error",
-      "message": "Fehler bei \"Dienstleistung Basel\": page.goto: Target page, context or browser has been closed",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T15:08:46.873Z",
-      "type": "scrape_start",
-      "message": "Scrape gestartet: \"Dienstleistung Basel\"",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T15:08:37.762Z",
-      "type": "batch_saved",
-      "message": "Zwischenstand: 0 Leads gespeichert",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T15:08:37.758Z",
-      "type": "error",
-      "message": "Fehler bei \"GmbH Basel\": page.goto: Target page, context or browser has been closed",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T15:08:37.754Z",
-      "type": "scrape_start",
-      "message": "Scrape gestartet: \"GmbH Basel\"",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T15:08:30.998Z",
-      "type": "batch_saved",
-      "message": "Zwischenstand: 0 Leads gespeichert",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T15:08:30.994Z",
-      "type": "error",
-      "message": "Fehler bei \"Beratung Basel\": page.goto: Target page, context or browser has been closed",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T15:08:30.990Z",
-      "type": "scrape_start",
-      "message": "Scrape gestartet: \"Beratung Basel\"",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T15:08:21.175Z",
-      "type": "batch_saved",
-      "message": "Zwischenstand: 0 Leads gespeichert",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T15:08:21.171Z",
-      "type": "error",
-      "message": "Fehler bei \"Agentur Basel\": page.goto: Target page, context or browser has been closed",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T15:08:21.168Z",
-      "type": "scrape_start",
-      "message": "Scrape gestartet: \"Agentur Basel\"",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T15:08:09.268Z",
-      "type": "batch_saved",
-      "message": "Zwischenstand: 0 Leads gespeichert",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T15:08:09.265Z",
-      "type": "error",
-      "message": "Fehler bei \"Marketing Zürich\": page.goto: Target page, context or browser has been closed",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T15:08:09.261Z",
-      "type": "scrape_start",
-      "message": "Scrape gestartet: \"Marketing Zürich\"",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T15:07:58.546Z",
-      "type": "batch_saved",
-      "message": "Zwischenstand: 0 Leads gespeichert",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T15:07:58.542Z",
-      "type": "error",
-      "message": "Fehler bei \"Dienstleistung Zürich\": page.goto: Target page, context or browser has been closed",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T15:07:58.538Z",
-      "type": "scrape_start",
-      "message": "Scrape gestartet: \"Dienstleistung Zürich\"",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T15:07:50.099Z",
-      "type": "batch_saved",
-      "message": "Zwischenstand: 0 Leads gespeichert",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T15:07:50.096Z",
-      "type": "error",
-      "message": "Fehler bei \"GmbH Zürich\": page.goto: Target page, context or browser has been closed",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T15:07:50.093Z",
-      "type": "scrape_start",
-      "message": "Scrape gestartet: \"GmbH Zürich\"",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T15:07:42.818Z",
-      "type": "batch_saved",
-      "message": "Zwischenstand: 0 Leads gespeichert",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T15:07:42.813Z",
-      "type": "error",
-      "message": "Fehler bei \"Beratung Zürich\": page.goto: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://www.google.com/maps/search/Beratung%20Z%C3%BCrich\", waiting until \"networkidle\"\u001b[22m\n",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T15:07:12.802Z",
-      "type": "scrape_start",
-      "message": "Scrape gestartet: \"Beratung Zürich\"",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T15:07:06.094Z",
-      "type": "batch_saved",
-      "message": "Zwischenstand: 0 Leads gespeichert",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T15:07:06.087Z",
-      "type": "info",
-      "message": "0 Ergebnisse für \"Agentur Zürich\"",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T15:06:52.618Z",
-      "type": "scrape_start",
-      "message": "Scrape gestartet: \"Agentur Zürich\"",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T15:06:50.904Z",
-      "type": "pipeline_start",
-      "message": "Scraper gestartet — 35 Suchen geplant",
-      "data": {}
-    },
-    {
-      "time": "2026-05-05T14:34:09.314Z",
-      "type": "pipeline_start",
-      "message": "Scraper gestartet — 35 Suchen geplant",
       "data": {}
     }
   ],
