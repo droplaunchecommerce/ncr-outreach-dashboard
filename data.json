@@ -1,288 +1,672 @@
 {
   "pipeline": {
-    "status": "running",
-    "current_step": "Enrichment fertig — 289 Leads mit E-Mail",
-    "started_at": "2026-05-05T15:06:50.899Z",
-    "last_updated": "2026-05-06T12:24:56.849Z"
+    "status": "idle",
+    "current_step": "Fertig — 1003 Leads, 676 mit E-Mail",
+    "started_at": "2026-05-06T09:54:43.427Z",
+    "last_updated": "2026-05-06T12:32:13.662Z"
   },
   "stats": {
-    "total_leads": 0,
-    "leads_with_email": 289,
-    "emails_sent": 50,
+    "total_leads": 1003,
+    "leads_with_email": 676,
+    "emails_sent": 10,
     "emails_opened": 0,
     "emails_clicked": 0,
     "follow_ups_sent": 0,
     "replies": 0
   },
   "progress": {
-    "current_city": "Hamburg",
-    "current_term": "GmbH",
-    "total_queries": 35,
-    "queries_done": 28
+    "current_city": "Graz",
+    "current_term": "Restaurant",
+    "total_queries": 106,
+    "queries_done": 106
   },
   "activity": [
     {
-      "time": "2026-05-06T12:24:56.849Z",
+      "time": "2026-05-06T12:32:13.662Z",
       "type": "pipeline_done",
-      "message": "Kampagne beendet: 50 E-Mails gesendet",
+      "message": "Scraper fertig: 1003 Leads, 676 mit E-Mail",
       "data": {}
     },
     {
-      "time": "2026-05-06T12:24:56.842Z",
-      "type": "info",
-      "message": "Tageslimit (200) erreicht — Kampagne pausiert",
+      "time": "2026-05-06T12:32:07.869Z",
+      "type": "batch_saved",
+      "message": "herold Restaurant/Graz: +0 Leads, 0 mit E-Mail",
       "data": {}
     },
     {
-      "time": "2026-05-06T12:24:08.175Z",
-      "type": "email_sent",
-      "message": "Gesendet: Steuerberater Michael Schmuttermaier <info@kanzlei-schmuttermaier.de>",
+      "time": "2026-05-06T12:31:56.479Z",
+      "type": "batch_saved",
+      "message": "herold Restaurant/Wien: +0 Leads, 0 mit E-Mail",
       "data": {}
     },
     {
-      "time": "2026-05-06T12:23:16.941Z",
-      "type": "email_sent",
-      "message": "Gesendet: neo Steuerberatungsgesellschaft München mbH <badkoetzting@neo-kanzlei.de>",
+      "time": "2026-05-06T12:31:45.205Z",
+      "type": "batch_saved",
+      "message": "herold Fitnessstudio/Graz: +0 Leads, 0 mit E-Mail",
       "data": {}
     },
     {
-      "time": "2026-05-06T12:22:31.593Z",
-      "type": "email_sent",
-      "message": "Gesendet: FAHN & Partner Wirtschaftspürfer Steuerberater München mbB <kanzlei@kanzlei-fahn.de>",
+      "time": "2026-05-06T12:31:35.726Z",
+      "type": "batch_saved",
+      "message": "herold Fitnessstudio/Wien: +0 Leads, 0 mit E-Mail",
       "data": {}
     },
     {
-      "time": "2026-05-06T12:21:42.858Z",
-      "type": "email_sent",
-      "message": "Gesendet: Ebermann u. Partner Steuerberatungsgesellschaft mbB <info@epsg.de>",
+      "time": "2026-05-06T12:31:23.760Z",
+      "type": "batch_saved",
+      "message": "herold Immobilien/Linz: +0 Leads, 0 mit E-Mail",
       "data": {}
     },
     {
-      "time": "2026-05-06T12:20:41.760Z",
-      "type": "email_sent",
-      "message": "Gesendet: Infektionsschutzbelehrung Online - Marc Bielenberg <support@infektionsschutzbelehrungonline.de>",
+      "time": "2026-05-06T12:31:13.615Z",
+      "type": "batch_saved",
+      "message": "herold Immobilien/Graz: +0 Leads, 0 mit E-Mail",
       "data": {}
     },
     {
-      "time": "2026-05-06T12:19:52.413Z",
-      "type": "email_sent",
-      "message": "Gesendet: enbe Energieberatung GmbH <mail@en-be.de>",
+      "time": "2026-05-06T12:31:04.030Z",
+      "type": "batch_saved",
+      "message": "herold Immobilien/Wien: +0 Leads, 0 mit E-Mail",
       "data": {}
     },
     {
-      "time": "2026-05-06T12:18:53.750Z",
-      "type": "email_sent",
-      "message": "Gesendet: REVISA Wirtschaftsprüfung Steuerberatung <info@revisa-treuhand.de>",
+      "time": "2026-05-06T12:30:54.706Z",
+      "type": "batch_saved",
+      "message": "herold Fotograf/Graz: +0 Leads, 0 mit E-Mail",
       "data": {}
     },
     {
-      "time": "2026-05-06T12:18:01.577Z",
-      "type": "email_sent",
-      "message": "Gesendet: GN Bauphysik Finkenberger + Kollegen Ingenieurgesellschaft mbH <kontakt-stuttgart@gn-bauphysik.com>",
+      "time": "2026-05-06T12:30:43.647Z",
+      "type": "batch_saved",
+      "message": "herold Fotograf/Wien: +0 Leads, 0 mit E-Mail",
       "data": {}
     },
     {
-      "time": "2026-05-06T12:17:12.345Z",
-      "type": "email_sent",
-      "message": "Gesendet: Freiberger Steuerberatungsgesellschaft mbH <info@freiberger-kanzlei.de>",
+      "time": "2026-05-06T12:30:32.867Z",
+      "type": "batch_saved",
+      "message": "herold Friseur/Linz: +0 Leads, 0 mit E-Mail",
       "data": {}
     },
     {
-      "time": "2026-05-06T12:16:28.498Z",
-      "type": "email_sent",
-      "message": "Gesendet: Dr. Weigl Augustinowski Treuconsult GmbH <info@aktc.info>",
+      "time": "2026-05-06T12:30:20.810Z",
+      "type": "batch_saved",
+      "message": "herold Friseur/Graz: +0 Leads, 0 mit E-Mail",
       "data": {}
     },
     {
-      "time": "2026-05-06T11:03:03.438Z",
-      "type": "info",
-      "message": "Stundenlimit (50) erreicht — warte 44 min",
+      "time": "2026-05-06T12:30:09.485Z",
+      "type": "batch_saved",
+      "message": "herold Friseur/Wien: +0 Leads, 0 mit E-Mail",
       "data": {}
     },
     {
-      "time": "2026-05-06T11:02:12.077Z",
-      "type": "email_sent",
-      "message": "Gesendet: Gronewald Agentur <info@gronewald.com>",
+      "time": "2026-05-06T12:29:57.012Z",
+      "type": "batch_saved",
+      "message": "local Restaurant/Bern: +0 Leads, 0 mit E-Mail",
       "data": {}
     },
     {
-      "time": "2026-05-06T11:01:24.066Z",
-      "type": "email_sent",
-      "message": "Gesendet: Amiri Katja <mail@kimia-productions.com>",
+      "time": "2026-05-06T12:29:45.409Z",
+      "type": "batch_saved",
+      "message": "local Restaurant/Basel: +0 Leads, 0 mit E-Mail",
       "data": {}
     },
     {
-      "time": "2026-05-06T11:00:27.640Z",
-      "type": "email_sent",
-      "message": "Gesendet: Görtz-Welsch Modedesign GmbH Agenturen <sales@annettegoertz.com>",
+      "time": "2026-05-06T12:29:31.798Z",
+      "type": "batch_saved",
+      "message": "local Restaurant/Zürich: +0 Leads, 0 mit E-Mail",
       "data": {}
     },
     {
-      "time": "2026-05-06T10:59:46.531Z",
-      "type": "email_sent",
-      "message": "Gesendet: AXA Versicherung Berlin Mitte - Bille Agentur <stefan.bille@axa.de>",
+      "time": "2026-05-06T12:29:17.223Z",
+      "type": "batch_saved",
+      "message": "local Maler/Bern: +0 Leads, 0 mit E-Mail",
       "data": {}
     },
     {
-      "time": "2026-05-06T10:58:47.697Z",
-      "type": "email_sent",
-      "message": "Gesendet: Falk Siad Al-Omary Medien-Management <post@al-omary.com>",
+      "time": "2026-05-06T12:29:02.748Z",
+      "type": "batch_saved",
+      "message": "local Maler/Basel: +0 Leads, 0 mit E-Mail",
       "data": {}
     },
     {
-      "time": "2026-05-06T10:58:05.989Z",
-      "type": "email_sent",
-      "message": "Gesendet: Deutschland mobil 2030 GmbH <kontakt@dm2030.de>",
+      "time": "2026-05-06T12:28:50.300Z",
+      "type": "batch_saved",
+      "message": "local Maler/Zürich: +0 Leads, 0 mit E-Mail",
       "data": {}
     },
     {
-      "time": "2026-05-06T10:57:10.474Z",
-      "type": "email_sent",
-      "message": "Gesendet: dpa Deutsche Presse-Agentur GmbH <eugen.guenter@sellwerk.de>",
+      "time": "2026-05-06T12:28:38.033Z",
+      "type": "batch_saved",
+      "message": "local Physiotherapie/Basel: +0 Leads, 0 mit E-Mail",
       "data": {}
     },
     {
-      "time": "2026-05-06T10:56:22.488Z",
-      "type": "email_sent",
-      "message": "Gesendet: pr Berlin Public Relation GmbH <reservierung@ganymed-brasserie.de>",
+      "time": "2026-05-06T12:28:23.936Z",
+      "type": "batch_saved",
+      "message": "local Physiotherapie/Zürich: +0 Leads, 0 mit E-Mail",
       "data": {}
     },
     {
-      "time": "2026-05-06T10:55:31.452Z",
-      "type": "email_sent",
-      "message": "Gesendet: Wenner Barbara Literaturagentur <wenner@agenturwenner.de>",
+      "time": "2026-05-06T12:28:09.126Z",
+      "type": "batch_saved",
+      "message": "local Fitnesscenter/Bern: +0 Leads, 0 mit E-Mail",
       "data": {}
     },
     {
-      "time": "2026-05-06T10:54:52.452Z",
-      "type": "email_sent",
-      "message": "Gesendet: Republic Affairs GmbH <info@republic-affairs.com>",
+      "time": "2026-05-06T12:27:56.358Z",
+      "type": "batch_saved",
+      "message": "local Fitnesscenter/Basel: +0 Leads, 0 mit E-Mail",
       "data": {}
     },
     {
-      "time": "2026-05-06T10:53:57.357Z",
-      "type": "email_sent",
-      "message": "Gesendet: Büscher & Andere Agentur für strategische Medienberatung <info@buescher-medien.de>",
+      "time": "2026-05-06T12:27:44.796Z",
+      "type": "batch_saved",
+      "message": "local Fitnesscenter/Zürich: +0 Leads, 0 mit E-Mail",
       "data": {}
     },
     {
-      "time": "2026-05-06T10:53:07.025Z",
-      "type": "email_sent",
-      "message": "Gesendet: Euro - Informationen Agentur für Public Relations <redaktion@eu-info.de>",
+      "time": "2026-05-06T12:27:30.178Z",
+      "type": "batch_saved",
+      "message": "local Immobilien/Luzern: +0 Leads, 0 mit E-Mail",
       "data": {}
     },
     {
-      "time": "2026-05-06T10:52:24.039Z",
-      "type": "email_sent",
-      "message": "Gesendet: kultkom - Kerstin Wiehe KULTURMANAGEMENT & KOMMUNIKATION Agentur für Kultur <bewerbung@kultkom.de>",
+      "time": "2026-05-06T12:27:17.473Z",
+      "type": "batch_saved",
+      "message": "local Immobilien/Bern: +0 Leads, 0 mit E-Mail",
       "data": {}
     },
     {
-      "time": "2026-05-06T10:51:21.412Z",
-      "type": "email_sent",
-      "message": "Gesendet: Agentur Filmgesichter, Inh. Johanna Ragwitz <jr@filmgesichter.de>",
+      "time": "2026-05-06T12:27:04.322Z",
+      "type": "batch_saved",
+      "message": "local Immobilien/Basel: +0 Leads, 0 mit E-Mail",
       "data": {}
     },
     {
-      "time": "2026-05-06T10:50:43.892Z",
-      "type": "email_sent",
-      "message": "Gesendet: DLC Agentur Berlin GmbH <mail@dlc.berlin>",
+      "time": "2026-05-06T12:26:52.302Z",
+      "type": "batch_saved",
+      "message": "local Immobilien/Zürich: +0 Leads, 0 mit E-Mail",
       "data": {}
     },
     {
-      "time": "2026-05-06T10:49:58.182Z",
-      "type": "email_sent",
-      "message": "Gesendet: Michels Karen u. Buttler Joachim Dres. Agentur für Kunst <service-hms@heise.de>",
+      "time": "2026-05-06T12:26:39.624Z",
+      "type": "batch_saved",
+      "message": "local Fotograf/Bern: +0 Leads, 0 mit E-Mail",
       "data": {}
     },
     {
-      "time": "2026-05-06T10:49:00.630Z",
-      "type": "email_sent",
-      "message": "Gesendet: IML Kommunikation UG (haftungsbeschränkt) <office@iml-kommunikation.de>",
+      "time": "2026-05-06T12:26:25.559Z",
+      "type": "batch_saved",
+      "message": "local Fotograf/Basel: +0 Leads, 0 mit E-Mail",
       "data": {}
     },
     {
-      "time": "2026-05-06T10:48:23.545Z",
-      "type": "email_sent",
-      "message": "Gesendet: Scandinavian Underwriters Agency GmbH <macke@scua-hamburg.de>",
+      "time": "2026-05-06T12:26:11.641Z",
+      "type": "batch_saved",
+      "message": "local Fotograf/Zürich: +0 Leads, 0 mit E-Mail",
       "data": {}
     },
     {
-      "time": "2026-05-06T10:47:31.843Z",
-      "type": "email_sent",
-      "message": "Gesendet: Ursula Triller Triller Communication <medien@trillercommunication.com>",
+      "time": "2026-05-06T12:26:01.544Z",
+      "type": "batch_saved",
+      "message": "local Kosmetik/Bern: +0 Leads, 0 mit E-Mail",
       "data": {}
     },
     {
-      "time": "2026-05-06T10:46:32.552Z",
-      "type": "email_sent",
-      "message": "Gesendet: Webdesign Agentur webrgb <info@webrgb.de>",
+      "time": "2026-05-06T12:25:47.749Z",
+      "type": "batch_saved",
+      "message": "local Kosmetik/Basel: +0 Leads, 0 mit E-Mail",
       "data": {}
     },
     {
-      "time": "2026-05-06T10:03:32.531Z",
-      "type": "info",
-      "message": "Stundenlimit (50) erreicht — warte 43 min",
+      "time": "2026-05-06T12:25:33.275Z",
+      "type": "batch_saved",
+      "message": "local Kosmetik/Zürich: +0 Leads, 0 mit E-Mail",
       "data": {}
     },
     {
-      "time": "2026-05-06T10:02:35.768Z",
-      "type": "email_sent",
-      "message": "Gesendet: addM GmbH - Agentur für digitales Wachstum <kontakt@addm.de>",
+      "time": "2026-05-06T12:25:22.187Z",
+      "type": "batch_saved",
+      "message": "local Coiffeur/Luzern: +0 Leads, 0 mit E-Mail",
       "data": {}
     },
     {
-      "time": "2026-05-06T10:01:38.358Z",
-      "type": "email_sent",
-      "message": "Gesendet: we-site GmbH <hey@we-site.de>",
+      "time": "2026-05-06T12:25:11.063Z",
+      "type": "batch_saved",
+      "message": "local Coiffeur/Winterthur: +0 Leads, 0 mit E-Mail",
       "data": {}
     },
     {
-      "time": "2026-05-06T10:00:59.056Z",
-      "type": "email_sent",
-      "message": "Gesendet: Pola - Agentur für Webdesign und Webentwicklung <hello@pola-purpose.de>",
+      "time": "2026-05-06T12:24:55.364Z",
+      "type": "batch_saved",
+      "message": "local Coiffeur/Bern: +0 Leads, 0 mit E-Mail",
       "data": {}
     },
     {
-      "time": "2026-05-06T10:00:15.321Z",
-      "type": "email_sent",
-      "message": "Gesendet: GLOBAL VISA TRAVEL SERVICE <info@vtshamburg.de>",
+      "time": "2026-05-06T12:24:40.997Z",
+      "type": "batch_saved",
+      "message": "local Coiffeur/Basel: +0 Leads, 0 mit E-Mail",
       "data": {}
     },
     {
-      "time": "2026-05-06T09:59:31.763Z",
-      "type": "email_sent",
-      "message": "Gesendet: apoio GmbH <hello@apoio-digital.com>",
+      "time": "2026-05-06T12:24:28.973Z",
+      "type": "batch_saved",
+      "message": "local Coiffeur/Zürich: +0 Leads, 0 mit E-Mail",
       "data": {}
     },
     {
-      "time": "2026-05-06T09:58:33.642Z",
-      "type": "email_sent",
-      "message": "Gesendet: Reisebüro Sydow <urlaub@reisebuero-sydow.de>",
+      "time": "2026-05-06T12:24:18.413Z",
+      "type": "batch_saved",
+      "message": "gelbeseiten Tierarzt/Berlin: +15 Leads, 7 mit E-Mail",
       "data": {}
     },
     {
-      "time": "2026-05-06T09:57:37.198Z",
-      "type": "email_sent",
-      "message": "Gesendet: Astrid Eckstein Live! GmbH <ae@astrideckstein.de>",
+      "time": "2026-05-06T12:22:30.749Z",
+      "type": "batch_saved",
+      "message": "gelbeseiten Tierarzt/Hamburg: +15 Leads, 12 mit E-Mail",
       "data": {}
     },
     {
-      "time": "2026-05-06T09:56:37.174Z",
-      "type": "email_sent",
-      "message": "Gesendet: We Are Social Deutschland GmbH <sprichmituns@wearesocial.de>",
+      "time": "2026-05-06T12:21:28.076Z",
+      "type": "batch_saved",
+      "message": "gelbeseiten Tierarzt/München: +15 Leads, 8 mit E-Mail",
       "data": {}
     },
     {
-      "time": "2026-05-06T09:55:39.309Z",
-      "type": "email_sent",
-      "message": "Gesendet: DCORE GmbH <rfq@reppublika.com>",
+      "time": "2026-05-06T12:20:11.850Z",
+      "type": "batch_saved",
+      "message": "gelbeseiten Hochzeitsfotograf/Stuttgart: +3 Leads, 2 mit E-Mail",
       "data": {}
     },
     {
-      "time": "2026-05-06T09:55:00.847Z",
-      "type": "email_sent",
-      "message": "Gesendet: features and creatures GmbH <info@featuresandcreatures.com>",
+      "time": "2026-05-06T12:19:49.938Z",
+      "type": "batch_saved",
+      "message": "gelbeseiten Hochzeitsfotograf/Berlin: +10 Leads, 8 mit E-Mail",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T12:18:48.911Z",
+      "type": "batch_saved",
+      "message": "gelbeseiten Hochzeitsfotograf/Hamburg: +15 Leads, 13 mit E-Mail",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T12:17:26.261Z",
+      "type": "batch_saved",
+      "message": "gelbeseiten Hochzeitsfotograf/München: +15 Leads, 6 mit E-Mail",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T11:27:16.996Z",
+      "type": "batch_saved",
+      "message": "gelbeseiten Personal Trainer/Frankfurt: +15 Leads, 6 mit E-Mail",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T11:25:17.399Z",
+      "type": "batch_saved",
+      "message": "gelbeseiten Personal Trainer/Berlin: +15 Leads, 1 mit E-Mail",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T11:22:27.555Z",
+      "type": "batch_saved",
+      "message": "gelbeseiten Personal Trainer/Hamburg: +15 Leads, 4 mit E-Mail",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T11:20:43.589Z",
+      "type": "batch_saved",
+      "message": "gelbeseiten Personal Trainer/München: +15 Leads, 8 mit E-Mail",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T11:19:17.650Z",
+      "type": "batch_saved",
+      "message": "gelbeseiten Catering/Berlin: +15 Leads, 13 mit E-Mail",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T11:17:48.148Z",
+      "type": "batch_saved",
+      "message": "gelbeseiten Catering/Hamburg: +15 Leads, 13 mit E-Mail",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T11:16:35.586Z",
+      "type": "batch_saved",
+      "message": "gelbeseiten Catering/München: +15 Leads, 9 mit E-Mail",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T11:15:17.496Z",
+      "type": "batch_saved",
+      "message": "gelbeseiten Restaurant/Frankfurt: +15 Leads, 7 mit E-Mail",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T11:13:57.807Z",
+      "type": "batch_saved",
+      "message": "gelbeseiten Restaurant/Berlin: +15 Leads, 13 mit E-Mail",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T11:12:50.778Z",
+      "type": "batch_saved",
+      "message": "gelbeseiten Restaurant/Hamburg: +15 Leads, 10 mit E-Mail",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T11:11:10.976Z",
+      "type": "batch_saved",
+      "message": "gelbeseiten Restaurant/München: +15 Leads, 12 mit E-Mail",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T11:09:57.016Z",
+      "type": "batch_saved",
+      "message": "gelbeseiten Elektro/Köln: +15 Leads, 14 mit E-Mail",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T11:08:46.163Z",
+      "type": "batch_saved",
+      "message": "gelbeseiten Elektro/Berlin: +15 Leads, 11 mit E-Mail",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T11:07:18.034Z",
+      "type": "batch_saved",
+      "message": "gelbeseiten Elektro/Hamburg: +15 Leads, 12 mit E-Mail",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T11:05:26.033Z",
+      "type": "batch_saved",
+      "message": "gelbeseiten Elektro/München: +15 Leads, 13 mit E-Mail",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T11:04:00.413Z",
+      "type": "batch_saved",
+      "message": "gelbeseiten Schreinerei/Frankfurt: +15 Leads, 13 mit E-Mail",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T11:02:31.515Z",
+      "type": "batch_saved",
+      "message": "gelbeseiten Schreinerei/Stuttgart: +15 Leads, 11 mit E-Mail",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T11:01:17.808Z",
+      "type": "batch_saved",
+      "message": "gelbeseiten Schreinerei/Hamburg: +15 Leads, 14 mit E-Mail",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T11:00:00.456Z",
+      "type": "batch_saved",
+      "message": "gelbeseiten Schreinerei/München: +15 Leads, 13 mit E-Mail",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T10:58:46.778Z",
+      "type": "batch_saved",
+      "message": "gelbeseiten Maler Lackierer/Frankfurt: +15 Leads, 10 mit E-Mail",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T10:57:31.654Z",
+      "type": "batch_saved",
+      "message": "gelbeseiten Maler Lackierer/Stuttgart: +15 Leads, 13 mit E-Mail",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T10:56:16.715Z",
+      "type": "batch_saved",
+      "message": "gelbeseiten Maler Lackierer/Berlin: +15 Leads, 14 mit E-Mail",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T10:54:24.118Z",
+      "type": "batch_saved",
+      "message": "gelbeseiten Maler Lackierer/Hamburg: +15 Leads, 11 mit E-Mail",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T10:53:12.236Z",
+      "type": "batch_saved",
+      "message": "gelbeseiten Maler Lackierer/München: +15 Leads, 11 mit E-Mail",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T10:51:27.982Z",
+      "type": "batch_saved",
+      "message": "gelbeseiten Physiotherapie/Stuttgart: +15 Leads, 8 mit E-Mail",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T10:50:10.788Z",
+      "type": "batch_saved",
+      "message": "gelbeseiten Physiotherapie/Berlin: +15 Leads, 11 mit E-Mail",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T10:48:50.918Z",
+      "type": "batch_saved",
+      "message": "gelbeseiten Physiotherapie/Hamburg: +15 Leads, 14 mit E-Mail",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T10:47:27.563Z",
+      "type": "batch_saved",
+      "message": "gelbeseiten Physiotherapie/München: +15 Leads, 8 mit E-Mail",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T10:44:41.460Z",
+      "type": "batch_saved",
+      "message": "gelbeseiten Fitnessstudio/Frankfurt: +15 Leads, 9 mit E-Mail",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T10:42:49.540Z",
+      "type": "batch_saved",
+      "message": "gelbeseiten Fitnessstudio/Köln: +15 Leads, 10 mit E-Mail",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T10:41:20.837Z",
+      "type": "batch_saved",
+      "message": "gelbeseiten Fitnessstudio/Berlin: +15 Leads, 6 mit E-Mail",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T10:39:16.463Z",
+      "type": "batch_saved",
+      "message": "gelbeseiten Fitnessstudio/Hamburg: +15 Leads, 11 mit E-Mail",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T10:37:29.851Z",
+      "type": "batch_saved",
+      "message": "gelbeseiten Fitnessstudio/München: +15 Leads, 11 mit E-Mail",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T10:35:33.083Z",
+      "type": "batch_saved",
+      "message": "gelbeseiten Immobilien Makler/Frankfurt: +15 Leads, 6 mit E-Mail",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T10:34:19.561Z",
+      "type": "batch_saved",
+      "message": "gelbeseiten Immobilien Makler/Stuttgart: +15 Leads, 11 mit E-Mail",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T10:32:51.242Z",
+      "type": "batch_saved",
+      "message": "gelbeseiten Immobilien Makler/Berlin: +15 Leads, 5 mit E-Mail",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T10:30:33.353Z",
+      "type": "batch_saved",
+      "message": "gelbeseiten Immobilien Makler/Hamburg: +15 Leads, 10 mit E-Mail",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T10:28:45.013Z",
+      "type": "batch_saved",
+      "message": "gelbeseiten Immobilien Makler/München: +15 Leads, 15 mit E-Mail",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T10:27:23.893Z",
+      "type": "batch_saved",
+      "message": "gelbeseiten Fotograf/Frankfurt: +15 Leads, 10 mit E-Mail",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T10:23:45.449Z",
+      "type": "batch_saved",
+      "message": "gelbeseiten Fotograf/Stuttgart: +15 Leads, 7 mit E-Mail",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T10:22:19.563Z",
+      "type": "batch_saved",
+      "message": "gelbeseiten Fotograf/Berlin: +15 Leads, 8 mit E-Mail",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T10:21:05.776Z",
+      "type": "batch_saved",
+      "message": "gelbeseiten Fotograf/Hamburg: +15 Leads, 11 mit E-Mail",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T10:20:01.413Z",
+      "type": "batch_saved",
+      "message": "gelbeseiten Fotograf/München: +15 Leads, 12 mit E-Mail",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T10:18:54.131Z",
+      "type": "batch_saved",
+      "message": "gelbeseiten Nagelstudio/Düsseldorf: +15 Leads, 7 mit E-Mail",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T10:17:16.151Z",
+      "type": "batch_saved",
+      "message": "gelbeseiten Nagelstudio/Köln: +15 Leads, 6 mit E-Mail",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T10:15:52.885Z",
+      "type": "batch_saved",
+      "message": "gelbeseiten Nagelstudio/Berlin: +15 Leads, 13 mit E-Mail",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T10:14:48.171Z",
+      "type": "batch_saved",
+      "message": "gelbeseiten Nagelstudio/Hamburg: +15 Leads, 10 mit E-Mail",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T10:13:45.994Z",
+      "type": "batch_saved",
+      "message": "gelbeseiten Nagelstudio/München: +15 Leads, 9 mit E-Mail",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T10:12:46.093Z",
+      "type": "batch_saved",
+      "message": "gelbeseiten Kosmetikstudio/Köln: +15 Leads, 11 mit E-Mail",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T10:11:17.696Z",
+      "type": "batch_saved",
+      "message": "gelbeseiten Kosmetikstudio/Frankfurt: +15 Leads, 10 mit E-Mail",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T10:09:36.167Z",
+      "type": "batch_saved",
+      "message": "gelbeseiten Kosmetikstudio/Stuttgart: +15 Leads, 8 mit E-Mail",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T10:08:24.385Z",
+      "type": "batch_saved",
+      "message": "gelbeseiten Kosmetikstudio/Berlin: +15 Leads, 13 mit E-Mail",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T10:05:59.969Z",
+      "type": "batch_saved",
+      "message": "gelbeseiten Kosmetikstudio/Hamburg: +15 Leads, 13 mit E-Mail",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T10:04:37.892Z",
+      "type": "batch_saved",
+      "message": "gelbeseiten Kosmetikstudio/München: +15 Leads, 11 mit E-Mail",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T10:03:19.716Z",
+      "type": "batch_saved",
+      "message": "gelbeseiten Friseur/Düsseldorf: +15 Leads, 10 mit E-Mail",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T10:02:22.430Z",
+      "type": "batch_saved",
+      "message": "gelbeseiten Friseur/Köln: +15 Leads, 10 mit E-Mail",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T10:00:53.800Z",
+      "type": "batch_saved",
+      "message": "gelbeseiten Friseur/Frankfurt: +15 Leads, 10 mit E-Mail",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T09:59:47.345Z",
+      "type": "batch_saved",
+      "message": "gelbeseiten Friseur/Stuttgart: +15 Leads, 8 mit E-Mail",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T09:58:39.530Z",
+      "type": "batch_saved",
+      "message": "gelbeseiten Friseur/Berlin: +15 Leads, 12 mit E-Mail",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T09:57:32.121Z",
+      "type": "batch_saved",
+      "message": "gelbeseiten Friseur/Hamburg: +15 Leads, 9 mit E-Mail",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T09:55:48.582Z",
+      "type": "batch_saved",
+      "message": "gelbeseiten Friseur/München: +15 Leads, 11 mit E-Mail",
+      "data": {}
+    },
+    {
+      "time": "2026-05-06T09:54:43.428Z",
+      "type": "pipeline_start",
+      "message": "Scraper gestartet — 106 Suchen",
       "data": {}
     },
     {
@@ -836,391 +1220,408 @@
       "type": "lead_enriched",
       "message": "Pintsch Andrea: anfrage@jkv-media.de",
       "data": {}
-    },
-    {
-      "time": "2026-05-06T06:55:06.412Z",
-      "type": "lead_enriched",
-      "message": "DCORE GmbH: rfq@reppublika.com",
-      "data": {}
-    },
-    {
-      "time": "2026-05-06T06:54:48.851Z",
-      "type": "lead_enriched",
-      "message": "features and creatures GmbH: info@featuresandcreatures.com",
-      "data": {}
-    },
-    {
-      "time": "2026-05-06T06:54:39.780Z",
-      "type": "lead_enriched",
-      "message": "Red Forest: info@redforest.de",
-      "data": {}
-    },
-    {
-      "time": "2026-05-06T06:54:30.973Z",
-      "type": "lead_enriched",
-      "message": "Euro Lizenzen: info@eurolizenzen.net",
-      "data": {}
-    },
-    {
-      "time": "2026-05-06T06:54:21.394Z",
-      "type": "lead_enriched",
-      "message": "Privance GbR The Private Assistance Büro München: anfrage@jkv-media.de",
-      "data": {}
-    },
-    {
-      "time": "2026-05-06T06:54:13.058Z",
-      "type": "lead_enriched",
-      "message": "Companea GmbH: info@limited24.de",
-      "data": {}
-    },
-    {
-      "time": "2026-05-06T06:54:04.585Z",
-      "type": "lead_enriched",
-      "message": "Wendt Martina: kristina@frauentermine.de",
-      "data": {}
-    },
-    {
-      "time": "2026-05-06T06:53:53.158Z",
-      "type": "lead_enriched",
-      "message": "Primafila Artists GmbH: philippoff@primafila-artists.com",
-      "data": {}
-    },
-    {
-      "time": "2026-05-06T06:53:43.497Z",
-      "type": "lead_enriched",
-      "message": "Kopfbrand e.K.: info@kopfbrand.com",
-      "data": {}
-    },
-    {
-      "time": "2026-05-06T06:53:12.529Z",
-      "type": "lead_enriched",
-      "message": "Sports Media Network GmbH & Co. KG: info@sportsmedianetwork.de",
-      "data": {}
-    },
-    {
-      "time": "2026-05-06T06:53:01.880Z",
-      "type": "lead_enriched",
-      "message": "consense communications GmbH: info@consense-communications.de",
-      "data": {}
-    },
-    {
-      "time": "2026-05-06T06:52:54.513Z",
-      "type": "lead_enriched",
-      "message": "DVAG Agentur Serkan Öztürk: info@dvag.com",
-      "data": {}
-    },
-    {
-      "time": "2026-05-06T06:52:46.006Z",
-      "type": "lead_enriched",
-      "message": "W. Siego Sicherheitstechnik, Schlüsseldienst GmbH: info@siego.de",
-      "data": {}
-    },
-    {
-      "time": "2026-05-06T06:52:30.140Z",
-      "type": "lead_enriched",
-      "message": "Scheffler & Partner, Steuerberatungsgesellschaft: info@steuern-scheffler.de",
-      "data": {}
-    },
-    {
-      "time": "2026-05-06T06:52:12.423Z",
-      "type": "lead_enriched",
-      "message": "Lutz Goller GmbH: office@ing-goller.de",
-      "data": {}
-    },
-    {
-      "time": "2026-05-06T06:52:05.391Z",
-      "type": "lead_enriched",
-      "message": "Erich Rohlffs GmbH Immobilien: info@rohlffs.de",
-      "data": {}
-    },
-    {
-      "time": "2026-05-06T06:51:56.736Z",
-      "type": "lead_enriched",
-      "message": "Energieberatung Windolph UG: marc.windolph@energieberatung-windolph.de",
-      "data": {}
-    },
-    {
-      "time": "2026-05-06T06:51:49.009Z",
-      "type": "lead_enriched",
-      "message": "B&S Steuerberater Partnerschaftsgesellschaft: team@bus-steuerberater.de",
-      "data": {}
-    },
-    {
-      "time": "2026-05-06T06:51:28.789Z",
-      "type": "lead_enriched",
-      "message": "PHINUS-CONSULT - Nachfolge-Beratung - Führung - Coaching - Team-Training: service-hms@heise.de",
-      "data": {}
-    },
-    {
-      "time": "2026-05-06T06:50:31.262Z",
-      "type": "lead_enriched",
-      "message": "Handt Corinna Dipl.-Oecotrophologin Ernährungsberaterin: info@viavitalis.de",
-      "data": {}
-    },
-    {
-      "time": "2026-05-06T06:50:22.714Z",
-      "type": "lead_enriched",
-      "message": "Energieberatung Hamburg - Tobias Wagner: info@energieberatung-hamburg.org",
-      "data": {}
-    },
-    {
-      "time": "2026-05-06T06:50:12.028Z",
-      "type": "lead_enriched",
-      "message": "Deter Consulting GmbH: info@deter-consulting.de",
-      "data": {}
-    },
-    {
-      "time": "2026-05-06T06:50:04.253Z",
-      "type": "lead_enriched",
-      "message": "Blöcker Stefan Steuerberater: kanzlei@stb-bloecker.de",
-      "data": {}
-    },
-    {
-      "time": "2026-05-06T06:49:53.884Z",
-      "type": "lead_enriched",
-      "message": "Bien Ewaryst Dipl.-Kfm. Steuerberater: service-hms@heise.de",
-      "data": {}
-    },
-    {
-      "time": "2026-05-06T06:49:43.656Z",
-      "type": "lead_enriched",
-      "message": "Bärbel Stricks, Heilkundliche Erlaubnis für Psychotherapie nach dem Heilpraktikergesetz: b.stricks@web.de",
-      "data": {}
-    },
-    {
-      "time": "2026-05-06T06:49:27.833Z",
-      "type": "lead_enriched",
-      "message": "Dipl.-Kauffr. Diana Habelt, Steuerberaterin: mail@hamburger-steuerberater.de",
-      "data": {}
-    },
-    {
-      "time": "2026-05-06T06:49:13.118Z",
-      "type": "lead_enriched",
-      "message": "Ambulante Psychosoziale Dienste Lydia Buchfink GmbH & Co KG: info@lydiabuchfink.de",
-      "data": {}
-    },
-    {
-      "time": "2026-05-06T06:48:53.436Z",
-      "type": "lead_enriched",
-      "message": "AIGNER ALFRED: info@steuerberater-aigner.de",
-      "data": {}
-    },
-    {
-      "time": "2026-05-06T06:48:44.027Z",
-      "type": "lead_enriched",
-      "message": "Planungsbüro - 3S GmbH: info@planung-3s.de",
-      "data": {}
-    },
-    {
-      "time": "2026-05-06T06:48:35.137Z",
-      "type": "lead_enriched",
-      "message": "Naturheilpraxis Gurniak Heilpraktiker: naturheilpraxis-thomas-gurniak@t-online.de",
-      "data": {}
-    },
-    {
-      "time": "2026-05-06T06:48:21.445Z",
-      "type": "lead_enriched",
-      "message": "Dr. Schmidt Partners GmbH Steuerberatungsgesellschaft: wspartner@wspartner.de",
-      "data": {}
-    },
-    {
-      "time": "2026-05-06T06:47:24.931Z",
-      "type": "lead_enriched",
-      "message": "Michael Pfister Steuerberater: info@pfister-steuer.dedocument.getelementbyid",
-      "data": {}
-    },
-    {
-      "time": "2026-05-06T06:47:15.063Z",
-      "type": "lead_enriched",
-      "message": "Koschkar & Schollmeyer Steuerberatungsgesellschaft mbH: info@denic.de",
-      "data": {}
-    },
-    {
-      "time": "2026-05-06T06:47:06.895Z",
-      "type": "lead_enriched",
-      "message": "Kisslinger-Popp & Partner PartG mbB Steuerberater- und Rechtsanwaltskanzlei: info@kisslinger-popp.de",
-      "data": {}
-    },
-    {
-      "time": "2026-05-06T06:46:56.627Z",
-      "type": "lead_enriched",
-      "message": "Steuerberater Michael Schmuttermaier: info@kanzlei-schmuttermaier.de",
-      "data": {}
-    },
-    {
-      "time": "2026-05-06T06:46:47.084Z",
-      "type": "lead_enriched",
-      "message": "neo Steuerberatungsgesellschaft München mbH: badkoetzting@neo-kanzlei.de",
-      "data": {}
-    },
-    {
-      "time": "2026-05-06T06:46:34.645Z",
-      "type": "lead_enriched",
-      "message": "FAHN & Partner Wirtschaftspürfer Steuerberater München mbB: kanzlei@kanzlei-fahn.de",
-      "data": {}
-    },
-    {
-      "time": "2026-05-06T06:46:23.240Z",
-      "type": "lead_enriched",
-      "message": "Ebermann u. Partner Steuerberatungsgesellschaft mbB: info@epsg.de",
-      "data": {}
-    },
-    {
-      "time": "2026-05-06T06:46:14.461Z",
-      "type": "lead_enriched",
-      "message": "Infektionsschutzbelehrung Online - Marc Bielenberg: support@infektionsschutzbelehrungonline.de",
-      "data": {}
-    },
-    {
-      "time": "2026-05-06T06:46:02.588Z",
-      "type": "lead_enriched",
-      "message": "enbe Energieberatung GmbH: mail@en-be.de",
-      "data": {}
-    },
-    {
-      "time": "2026-05-06T06:45:53.780Z",
-      "type": "lead_enriched",
-      "message": "REVISA Wirtschaftsprüfung Steuerberatung: info@revisa-treuhand.de",
-      "data": {}
-    },
-    {
-      "time": "2026-05-06T06:45:40.369Z",
-      "type": "lead_enriched",
-      "message": "GN Bauphysik Finkenberger + Kollegen Ingenieurgesellschaft mbH: kontakt-stuttgart@gn-bauphysik.com",
-      "data": {}
-    },
-    {
-      "time": "2026-05-06T06:45:31.307Z",
-      "type": "lead_enriched",
-      "message": "Freiberger Steuerberatungsgesellschaft mbH: info@freiberger-kanzlei.de",
-      "data": {}
-    },
-    {
-      "time": "2026-05-06T06:45:21.928Z",
-      "type": "lead_enriched",
-      "message": "Dr. Weigl Augustinowski Treuconsult GmbH: info@aktc.info",
-      "data": {}
-    },
-    {
-      "time": "2026-05-06T06:45:13.664Z",
-      "type": "lead_enriched",
-      "message": "Gronewald Agentur: info@gronewald.com",
-      "data": {}
-    },
-    {
-      "time": "2026-05-06T06:45:05.037Z",
-      "type": "lead_enriched",
-      "message": "Amiri Katja: mail@kimia-productions.com",
-      "data": {}
-    },
-    {
-      "time": "2026-05-06T06:44:55.767Z",
-      "type": "lead_enriched",
-      "message": "Fleishman-Hillard Germany GmbH: eugen.guenter@sellwerk.de",
-      "data": {}
-    },
-    {
-      "time": "2026-05-06T06:44:34.874Z",
-      "type": "lead_enriched",
-      "message": "Görtz-Welsch Modedesign GmbH Agenturen: sales@annettegoertz.com",
-      "data": {}
-    },
-    {
-      "time": "2026-05-06T06:44:24.652Z",
-      "type": "lead_enriched",
-      "message": "Republic Affairs GmbH: info@republic-affairs.com",
-      "data": {}
-    },
-    {
-      "time": "2026-05-06T06:44:13.306Z",
-      "type": "lead_enriched",
-      "message": "AXA Versicherung Berlin Mitte - Bille Agentur: stefan.bille@axa.de",
-      "data": {}
-    },
-    {
-      "time": "2026-05-06T06:44:03.391Z",
-      "type": "lead_enriched",
-      "message": "Plato GmbH: eugen.guenter@sellwerk.de",
-      "data": {}
-    },
-    {
-      "time": "2026-05-06T06:43:50.990Z",
-      "type": "lead_enriched",
-      "message": "Falk Siad Al-Omary Medien-Management: post@al-omary.com",
-      "data": {}
-    },
-    {
-      "time": "2026-05-06T06:43:40.618Z",
-      "type": "lead_enriched",
-      "message": "Deutschland mobil 2030 GmbH: kontakt@dm2030.de",
-      "data": {}
-    },
-    {
-      "time": "2026-05-06T06:43:32.230Z",
-      "type": "lead_enriched",
-      "message": "dpa Deutsche Presse-Agentur GmbH: eugen.guenter@sellwerk.de",
-      "data": {}
-    },
-    {
-      "time": "2026-05-06T06:43:19.508Z",
-      "type": "lead_enriched",
-      "message": "pr berlin Public Relations GmbH: reservierung@ganymed-brasserie.de",
-      "data": {}
-    },
-    {
-      "time": "2026-05-06T06:43:09.281Z",
-      "type": "lead_enriched",
-      "message": "pr Berlin Public Relation GmbH: reservierung@ganymed-brasserie.de",
-      "data": {}
-    },
-    {
-      "time": "2026-05-06T06:42:58.383Z",
-      "type": "lead_enriched",
-      "message": "Wenner Barbara Literaturagentur: wenner@agenturwenner.de",
-      "data": {}
-    },
-    {
-      "time": "2026-05-06T06:42:47.544Z",
-      "type": "lead_enriched",
-      "message": "Republic Affairs GmbH: info@republic-affairs.com",
-      "data": {}
-    },
-    {
-      "time": "2026-05-06T06:42:35.749Z",
-      "type": "lead_enriched",
-      "message": "Büscher & Andere Agentur für strategische Medienberatung: info@buescher-medien.de",
-      "data": {}
-    },
-    {
-      "time": "2026-05-06T06:42:27.596Z",
-      "type": "lead_enriched",
-      "message": "Euro - Informationen Agentur für Public Relations: redaktion@eu-info.de",
-      "data": {}
-    },
-    {
-      "time": "2026-05-06T06:42:18.330Z",
-      "type": "lead_enriched",
-      "message": "kultkom - Kerstin Wiehe KULTURMANAGEMENT & KOMMUNIKATION Agentur für Kultur: bewerbung@kultkom.de",
-      "data": {}
-    },
-    {
-      "time": "2026-05-06T06:42:03.054Z",
-      "type": "lead_enriched",
-      "message": "Agentur Filmgesichter, Inh. Johanna Ragwitz: jr@filmgesichter.de",
-      "data": {}
-    },
-    {
-      "time": "2026-05-06T06:41:53.511Z",
-      "type": "lead_enriched",
-      "message": "DLC Agentur Berlin GmbH: mail@dlc.berlin",
-      "data": {}
-    },
-    {
-      "time": "2026-05-06T06:41:42.483Z",
-      "type": "lead_enriched",
-      "message": "Michels Karen u. Buttler Joachim Dres. Agentur für Kunst: service-hms@heise.de",
-      "data": {}
     }
   ],
-  "leads_preview": []
+  "leads_preview": [
+    {
+      "name": "Hartwig Elke Dr.med.vet.",
+      "city": "Berlin",
+      "email": "",
+      "status": "neu",
+      "website": "http://www.tierarztpraxis-hartwig.de/",
+      "scraped_at": "2026-05-06T12:24:17.647Z"
+    },
+    {
+      "name": "Oczipka Miriam Dr.",
+      "city": "Berlin",
+      "email": "",
+      "status": "neu",
+      "website": "http://www.tierarztpraxis.com/",
+      "scraped_at": "2026-05-06T12:24:14.898Z"
+    },
+    {
+      "name": "Dr.med.vet. Wolfgang Beck",
+      "city": "Berlin",
+      "email": "",
+      "status": "neu",
+      "website": "http://www.tierarztpraxis-dr-beck.de/",
+      "scraped_at": "2026-05-06T12:24:11.837Z"
+    },
+    {
+      "name": "Christiane Heise u. Timm Pistol",
+      "city": "Berlin",
+      "email": "tap-heise-pistol@t-online.de",
+      "status": "neu",
+      "website": "http://www.tierarzt-alt-tegel.de/",
+      "scraped_at": "2026-05-06T12:24:09.240Z"
+    },
+    {
+      "name": "Dr. Katharina Dralle",
+      "city": "Berlin",
+      "email": "k.dralle@berlin.de",
+      "status": "neu",
+      "website": "https://www.dr-dralle-berlin.de/",
+      "scraped_at": "2026-05-06T12:24:05.594Z"
+    },
+    {
+      "name": "Tierarztpraxis am Schlachtensee  Dr. Katharina Gröndahl",
+      "city": "Berlin",
+      "email": "waschbaer-berlin@gmx.de",
+      "status": "neu",
+      "website": "http://www.tierarztpraxis-am-schlachtensee.de/",
+      "scraped_at": "2026-05-06T12:24:02.738Z"
+    },
+    {
+      "name": "Reich Andrea",
+      "city": "Berlin",
+      "email": "",
+      "status": "neu",
+      "website": "http://www.tierarztpraxis-reinickendorf.de/",
+      "scraped_at": "2026-05-06T12:24:00.453Z"
+    },
+    {
+      "name": "Mattke Ulrich",
+      "city": "Berlin",
+      "email": "",
+      "status": "neu",
+      "website": "http://www.tierarzt-mattke.de/",
+      "scraped_at": "2026-05-06T12:23:52.518Z"
+    },
+    {
+      "name": "Lück Tanja",
+      "city": "Berlin",
+      "email": "",
+      "status": "neu",
+      "website": "http://www.tanja-lueck.de/",
+      "scraped_at": "2026-05-06T12:23:19.325Z"
+    },
+    {
+      "name": "Kattinger Petra",
+      "city": "Berlin",
+      "email": "noreply@kleintierpraxis-uhlenhorst.de",
+      "status": "neu",
+      "website": "http://www.kleintierpraxis-uhlenhorst.de/",
+      "scraped_at": "2026-05-06T12:23:15.914Z"
+    },
+    {
+      "name": "Brieger Harald Dr.med.vet.",
+      "city": "Berlin",
+      "email": "",
+      "status": "neu",
+      "website": "http://www.dr-brieger.de/",
+      "scraped_at": "2026-05-06T12:23:11.415Z"
+    },
+    {
+      "name": "Andreas Katharina Dr.med.vet.",
+      "city": "Berlin",
+      "email": "info@tierarztpraxis-andreas.de",
+      "status": "neu",
+      "website": "http://www.tierarztpraxis-andreas.de/",
+      "scraped_at": "2026-05-06T12:22:58.281Z"
+    },
+    {
+      "name": "Henke Gisela",
+      "city": "Berlin",
+      "email": "tierarztpraxis-henke@gmx.de",
+      "status": "neu",
+      "website": "http://www.tierarztpraxis-henke.de/",
+      "scraped_at": "2026-05-06T12:22:55.400Z"
+    },
+    {
+      "name": "König Hans Georg Dr.med.vet.",
+      "city": "Berlin",
+      "email": "mail@drkoenig.org",
+      "status": "neu",
+      "website": "http://www.drkoenig.org/",
+      "scraped_at": "2026-05-06T12:22:52.626Z"
+    },
+    {
+      "name": "Tierarztpraxis Veil & Nilkes | Berlin-Spandau",
+      "city": "Berlin",
+      "email": "",
+      "status": "neu",
+      "website": "https://www.tierarztspandau.com/",
+      "scraped_at": "2026-05-06T12:22:48.093Z"
+    },
+    {
+      "name": "Dr. Andrea Welz - Kleintierpraxis",
+      "city": "Hamburg",
+      "email": "info@tierarztpraxis-welz.de",
+      "status": "neu",
+      "website": "https://tierarztpraxis-welz.de/",
+      "scraped_at": "2026-05-06T12:22:30.083Z"
+    },
+    {
+      "name": "Tierarztpraxis am Millerntor Voelkel",
+      "city": "Hamburg",
+      "email": "info@tierarztpraxis-am-millerntor.de",
+      "status": "neu",
+      "website": "http://www.tierarztpraxis-am-millerntor.de/",
+      "scraped_at": "2026-05-06T12:22:27.449Z"
+    },
+    {
+      "name": "Voth Imke Dr.med.vet. Kleintierpraxis",
+      "city": "Hamburg",
+      "email": "praxis@docvoth.de",
+      "status": "neu",
+      "website": "http://www.tierarztpraxis-grindelhof.de/",
+      "scraped_at": "2026-05-06T12:22:24.355Z"
+    },
+    {
+      "name": "Tiergesundheitszentrum Pöseldorf",
+      "city": "Hamburg",
+      "email": "",
+      "status": "neu",
+      "website": "http://www.tiergesundheitszentrum-poeseldorf.de/",
+      "scraped_at": "2026-05-06T12:22:21.539Z"
+    },
+    {
+      "name": "Auf St.Pauli - Tierarztpraxis St.Pauli Tatjana Kurts",
+      "city": "Hamburg",
+      "email": "",
+      "status": "neu",
+      "website": "http://www.tierarzt-stpauli.de/",
+      "scraped_at": "2026-05-06T12:22:18.988Z"
+    },
+    {
+      "name": "Radicke Boris Tierärztliche Praxis für Kleintiere",
+      "city": "Hamburg",
+      "email": "ta-rad@t-online.de",
+      "status": "neu",
+      "website": "http://www.tierarztpraxis-radicke.de/",
+      "scraped_at": "2026-05-06T12:22:14.271Z"
+    },
+    {
+      "name": "filu Tierarztpraxis Winterhude - Allgemein- und Notfallmedizin",
+      "city": "Hamburg",
+      "email": "",
+      "status": "neu",
+      "website": "https://www.filu.vet/standorte/hamburg",
+      "scraped_at": "2026-05-06T12:22:11.429Z"
+    },
+    {
+      "name": "Hagenbeck Dorothea Dr. med. vet. Kleintierpraxis",
+      "city": "Hamburg",
+      "email": "info@kleintierpraxis-stellingen.de",
+      "status": "neu",
+      "website": "http://www.kleintierpraxis-stellingen.de/",
+      "scraped_at": "2026-05-06T12:22:07.175Z"
+    },
+    {
+      "name": "Dr. Roswitha van Haaren, Tierärztin",
+      "city": "Hamburg",
+      "email": "info@klick-vet.de",
+      "status": "neu",
+      "website": "http://www.vanhaaren-vet.de/",
+      "scraped_at": "2026-05-06T12:22:04.845Z"
+    },
+    {
+      "name": "Dr. med. vet. Boris Radicke Tierarzt Tierarzt, Tierärztliche Praxis für kleine Haustiere",
+      "city": "Hamburg",
+      "email": "ta-rad@t-online.de",
+      "status": "neu",
+      "website": "http://www.tierarztpraxis-radicke.de/",
+      "scraped_at": "2026-05-06T12:21:59.802Z"
+    },
+    {
+      "name": "Wölm Matthias Dr., Tierarztpraxis für Pathologie",
+      "city": "Hamburg",
+      "email": "mail@tierpathologie-hamburg.de",
+      "status": "neu",
+      "website": "http://www.tierpathologie-hamburg.de/",
+      "scraped_at": "2026-05-06T12:21:56.731Z"
+    },
+    {
+      "name": "Klingberg Marc-Niklas Tierarztpraxis",
+      "city": "Hamburg",
+      "email": "info@tierarztpraxis-klingberg.de",
+      "status": "neu",
+      "website": "http://www.tierarztpraxis-klingberg.de/",
+      "scraped_at": "2026-05-06T12:21:53.718Z"
+    },
+    {
+      "name": "Dr. med. vet. Stefanie Westphalen, Tierärztin",
+      "city": "Hamburg",
+      "email": "info@tierarzt-beethovenstrasse.de",
+      "status": "neu",
+      "website": "http://www.tierarzt-beethovenstrasse.de/",
+      "scraped_at": "2026-05-06T12:21:49.491Z"
+    },
+    {
+      "name": "Welz A. Dr. Kleintierpraxis",
+      "city": "Hamburg",
+      "email": "info@tierarztpraxis-welz.de",
+      "status": "neu",
+      "website": "http://www.tierarztpraxis-welz.de/",
+      "scraped_at": "2026-05-06T12:21:46.326Z"
+    },
+    {
+      "name": "Dr. Karl-Lorenz Ottensmeyer Tierarzt",
+      "city": "Hamburg",
+      "email": "info@tierarztpraxis-winterhude.de",
+      "status": "neu",
+      "website": "http://www.tierarztpraxis-winterhude.de/",
+      "scraped_at": "2026-05-06T12:21:42.705Z"
+    },
+    {
+      "name": "Grundler Gerbert Dr.med.vet. Tierarzt",
+      "city": "München",
+      "email": "anfrage@jkv-media.de",
+      "status": "neu",
+      "website": "https://www.jkv-media.de/",
+      "scraped_at": "2026-05-06T12:21:27.677Z"
+    },
+    {
+      "name": "Dr. Sylvia Belgard , Dr.Karin Dorweiler Kleintierpraxis",
+      "city": "München",
+      "email": "kontakt@kleintierpraxis-belgard.de",
+      "status": "neu",
+      "website": "https://kleintierpraxis-belgard.de/",
+      "scraped_at": "2026-05-06T12:21:25.049Z"
+    },
+    {
+      "name": "Dr. med. vet. Heidi von Moreau",
+      "city": "München",
+      "email": "",
+      "status": "neu",
+      "website": "https://hausbesuche-fuer-katzen.de/",
+      "scraped_at": "2026-05-06T12:21:22.935Z"
+    },
+    {
+      "name": "Dr. Gerbert Grundler Tierarztpraxis",
+      "city": "München",
+      "email": "anfrage@jkv-media.de",
+      "status": "neu",
+      "website": "https://www.jkv-media.de/",
+      "scraped_at": "2026-05-06T12:21:20.486Z"
+    },
+    {
+      "name": "Tierarztpraxis Dr. Hellmeier",
+      "city": "München",
+      "email": "",
+      "status": "neu",
+      "website": "http://www.tierarzt-hellmeier.de/",
+      "scraped_at": "2026-05-06T12:21:17.185Z"
+    },
+    {
+      "name": "Synilo Andre Dr.med.vet.",
+      "city": "München",
+      "email": "info@tierarzt-feldkirchen.de",
+      "status": "neu",
+      "website": "http://www.tierarzt-feldkirchen.de/",
+      "scraped_at": "2026-05-06T12:21:13.632Z"
+    },
+    {
+      "name": "Mejstrik Katharina Dr.",
+      "city": "München",
+      "email": "",
+      "status": "neu",
+      "website": "http://www.tierarzt-unterhaching.de/",
+      "scraped_at": "2026-05-06T12:21:09.385Z"
+    },
+    {
+      "name": "Fiederling Frank Dr.med.vet.",
+      "city": "München",
+      "email": "",
+      "status": "neu",
+      "website": "http://www.pasinger-tierarztpraxis.de/",
+      "scraped_at": "2026-05-06T12:21:02.620Z"
+    },
+    {
+      "name": "Dr. R. Dusch, Dr. G. Westermaier",
+      "city": "München",
+      "email": "",
+      "status": "neu",
+      "website": "http://www.dusch-westermaier.de/",
+      "scraped_at": "2026-05-06T12:20:59.240Z"
+    },
+    {
+      "name": "Baumann Peter Dr.med.vet.",
+      "city": "München",
+      "email": "",
+      "status": "neu",
+      "website": "http://www.kleintierpraxis-muenchen.de/",
+      "scraped_at": "2026-05-06T12:20:56.222Z"
+    },
+    {
+      "name": "Ballauf Brigitte Dr. u. Mejstrik Katharina Dr.",
+      "city": "München",
+      "email": "",
+      "status": "neu",
+      "website": "http://www.tierarzt-unterhaching.de/",
+      "scraped_at": "2026-05-06T12:20:46.260Z"
+    },
+    {
+      "name": "Tierärztliches Augenzentrum München",
+      "city": "München",
+      "email": "info@tier-augenarzt.de",
+      "status": "neu",
+      "website": "http://www.tier-augenarzt.de/",
+      "scraped_at": "2026-05-06T12:20:38.438Z"
+    },
+    {
+      "name": "Kleintierpraxis Roemer",
+      "city": "München",
+      "email": "anfrage@jkv-media.de",
+      "status": "neu",
+      "website": "https://www.jkv-media.de/",
+      "scraped_at": "2026-05-06T12:20:32.461Z"
+    },
+    {
+      "name": "Dr.med.vet. Silke Beckmann",
+      "city": "München",
+      "email": "praxis@tierarzt-poing.de",
+      "status": "neu",
+      "website": "https://www.tierarzt-poing.de/",
+      "scraped_at": "2026-05-06T12:20:29.443Z"
+    },
+    {
+      "name": "Dr.med.vet. Stephanie Janowski-Gastl Tierärztin",
+      "city": "München",
+      "email": "info@ta-gollierplatz.de",
+      "status": "neu",
+      "website": "http://www.tierarztpraxis-am-gollierplatz.de/",
+      "scraped_at": "2026-05-06T12:20:26.018Z"
+    },
+    {
+      "name": "Queen Park Photography",
+      "city": "Stuttgart",
+      "email": "",
+      "status": "neu",
+      "website": "http://www.queenpark.de/",
+      "scraped_at": "2026-05-06T12:20:11.311Z"
+    },
+    {
+      "name": "Fridrich Stefan Hochzeitsfotografie",
+      "city": "Stuttgart",
+      "email": "info@sf-photography.eu",
+      "status": "neu",
+      "website": "https://www.sf-photography.eu/",
+      "scraped_at": "2026-05-06T12:20:07.861Z"
+    },
+    {
+      "name": "Bührle Micha Hochzeitsfotograf",
+      "city": "Stuttgart",
+      "email": "michabuehrle@gmx.de",
+      "status": "neu",
+      "website": "https://www.michabuhrle.com/",
+      "scraped_at": "2026-05-06T12:20:05.367Z"
+    },
+    {
+      "name": "InBerlinHeiraten.de",
+      "city": "Berlin",
+      "email": "info@inberlinheiraten.de",
+      "status": "neu",
+      "website": "https://inberlinheiraten.de/",
+      "scraped_at": "2026-05-06T12:19:49.296Z"
+    },
+    {
+      "name": "Ringfoto Fehse GmbH",
+      "city": "Berlin",
+      "email": "",
+      "status": "neu",
+      "website": "https://www.ringfoto-fehse.de/",
+      "scraped_at": "2026-05-06T12:19:41.470Z"
+    }
+  ]
 }
